@@ -93,8 +93,8 @@ nav .menu .website_name {
 	/* background: white; */
 	padding: 4px 8px;
 	border-radius: 2px;
-	opacity: 0.5;
-	transition: all 0.4s ease;
+	opacity: 1;
+	/* transition: all 0.4s ease; */
 	cursor: pointer;
 }
 nav .menu .website_name:hover {
@@ -140,7 +140,7 @@ nav .menu .menu_links .link:hover {
 	color: #fb8a8a;
 }
 nav .menu .menu_links .link:hover:before {
-	width: 40px;
+	width: 80%;
 	left: 0;
 }
 nav .menu .menu_icon {
@@ -189,6 +189,16 @@ nav .menu .menu_icon:hover .icon:after {
 }
 
 .wrapper {
+	display: flex;
+	/* grid-template-columns: 1fr; */
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.wrappert {
 	display: grid;
 	grid-template-columns: 1fr;
 	justify-content: center;
@@ -197,12 +207,26 @@ nav .menu .menu_icon:hover .icon:after {
 	overflow-y: hidden;
 	overflow-x: hidden;
 }
+
+.imggg{
+	width: 400px;
+	z-index: 3;
+	animation: text 0.6s 1.8s ease backwards;
+	margin-right: 10vw;
+	/* animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards; */
+	/* animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
+	animation-delay: 1.2s; */
+}
 .wrapper .container {
-	margin: 0 auto;
+	margin: 0 10vw;
+	/* right: 0; */
+	/* height: 90%; */
 	transition: all 0.4s ease;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+
+	/* justify-content: center;
+	align-items: center; */
 	position: relative;
 }
 .wrapper .container .scene {
@@ -211,68 +235,45 @@ nav .menu .menu_icon:hover .icon:after {
 	height: 100vh;
 	vertical-align: middle;
 }
-.wrapper .container .one,
+/* .wrapper .container .one,
 .wrapper .container .two,
 .wrapper .container .three,
-.wrapper .container .circle,
+.wrapper .container .circle, */
 .wrapper .container .p404 {
-	width: 60%;
+	/* width: 60%;
 	height: 60%;
 	top: 20% !important;
 	left: 20% !important;
 	min-width: 400px;
-	min-height: 400px;
+	min-height: 400px; */
 }
-.wrapper .container .one .content,
+/* .wrapper .container .one .content,
 .wrapper .container .two .content,
 .wrapper .container .three .content,
-.wrapper .container .circle .content,
+.wrapper .container .circle .content, */
 .wrapper .container .p404 .content {
-	width: 600px;
-	height: 600px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
+	/* width: 600px;
+	height: 600px; */
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* position: absolute; */
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
 }
-.p404 {
-	width: 200px;
-	height: 200px;
-}
+/* .p404 { */
+	/* width: 200px;
+	height: 200px; */
+/* } */
 @keyframes content {
 	0% {
 		width: 0;
 	}
 }
-.wrapper .container .one .content .piece,
-.wrapper .container .two .content .piece,
-.wrapper .container .three .content .piece,
-.wrapper .container .circle .content .piece,
-.wrapper .container .p404 .content .piece {
-	width: 200px;
-	height: 80px;
-	display: flex;
-	position: absolute;
-	border-radius: 80px;
-	z-index: 1;
-	animation: pieceLeft 8s cubic-bezier(1, 0.06, 0.25, 1) infinite both;
-}
-@keyframes pieceLeft {
-	50% {
-		left: 80%;
-		width: 10%;
-	}
-}
-@keyframes pieceRight {
-	50% {
-		right: 80%;
-		width: 10%;
-	}
-}
+
+
 @media screen and (max-width: 799px) {
 	.wrapper .container .one,
 	.wrapper .container .two,
@@ -293,20 +294,20 @@ nav .menu .menu_icon:hover .icon:after {
 	.wrapper .container .three,
 	.wrapper .container .circle,
 	.wrapper .container .p404 {
-		min-width: 280px;
+		/* min-width: 280px;
 		min-height: 280px;
 		width: 60%;
-		height: 60%;
+		height: 60%; */
 		top: 20% !important;
 		left: 20% !important;
 	}
 }
 .wrapper .container .text {
-	width: 60%;
+	/* width: 60%;
 	height: 40%;
 	min-width: 400px;
-	min-height: 500px;
-	position: absolute;
+	min-height: 500px; */
+	/* position: absolute; */
 	margin: 40px 0;
 	animation: text 0.6s 1.8s ease backwards;
 }
@@ -324,7 +325,7 @@ nav .menu .menu_icon:hover .icon:after {
 }
 .wrapper .container .text article {
 	width: 400px;
-	position: absolute;
+	/* position: absolute; */
 	z-index: 4;
 	display: flex;
 	flex-direction: column;
@@ -333,8 +334,8 @@ nav .menu .menu_icon:hover .icon:after {
 	text-align: center;
 	bottom: 10vh;
 	gap: 20px;
-	left: 50%;
-	transform: translateX(-50%);
+	/* left: 50%; */
+	/* transform: translateX(-50%); */
 }
 @media screen and (max-width: 799px) {
 	.wrapper .container .text article {
@@ -397,9 +398,9 @@ nav .menu .menu_icon:hover .icon:after {
 	letter-spacing: 4px;
 	color: hsl(0, 0%, 100%);
 	display: flex !important;
-	justify-content: center;
+	/* justify-content: center; */
 	/* align-items: center; */
-	position: absolute;
+	/* position: absolute; */
 	z-index: 2;
 	margin-top: 3rem;
 	animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
@@ -416,144 +417,11 @@ nav .menu .menu_icon:hover .icon:after {
 		transform: scale(10) skew(20deg, 20deg);
 	}
 }
-.wrapper .container .p404:nth-of-type(2) {
-	color: #36184f;
-	z-index: 1;
-	animation-delay: 1s;
-	filter: blur(10px);
-	opacity: 0.8;
-}
-.wrapper .container .circle {
-	position: absolute;
-}
-.wrapper .container .circle:before {
-	content: '';
-	position: absolute;
-	width: 800px;
-	height: 800px;
-	background-color: #fca311;
-	border-radius: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25),
-		inset 5px 0px 5px rgba(50, 36, 62, 0.3),
-		inset 5px 5px 20px rgba(50, 36, 62, 0.25),
-		2px 2px 5px rgba(255, 255, 255, 0.2);
-	animation: circle 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-}
-@keyframes circle {
-	0% {
-		width: 0;
-		height: 0;
-	}
-}
-@media screen and (max-width: 799px) {
-	.wrapper .container .circle:before {
-		width: 400px;
-		height: 400px;
-	}
-}
-.wrapper .container .one .content:before {
-	content: '';
-	position: absolute;
-	width: 600px;
-	height: 600px;
-	background-color: rgba(54, 24, 79, 0.3);
-	border-radius: 100%;
-	box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25),
-		inset 5px 0px 5px rgba(50, 36, 62, 0.3),
-		inset 5px 5px 20px rgba(50, 36, 62, 0.25),
-		2px 2px 5px rgba(255, 255, 255, 0.2);
-	animation: circle 0.8s 0.4s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-}
-@media screen and (max-width: 799px) {
-	.wrapper .container .one .content:before {
-		width: 300px;
-		height: 300px;
-	}
-}
-.wrapper .container .one .content .piece {
-	background: linear-gradient(90deg, rgba(128, 118, 234, 0.5) 13.7%, rgba(234, 117, 255,0.5) 94.65%);
-}
-.wrapper .container .one .content .piece:nth-child(1) {
-	right: 15%;
-	top: 18%;
-	height: 30px;
-	width: 120px;
-	animation-delay: 0.5s;
-	animation-name: pieceRight;
-}
-.wrapper .container .one .content .piece:nth-child(2) {
-	left: 15%;
-	top: 45%;
-	width: 150px;
-	height: 50px;
-	animation-delay: 1s;
-	animation-name: pieceLeft;
-}
-.wrapper .container .one .content .piece:nth-child(3) {
-	left: 10%;
-	top: 75%;
-	height: 20px;
-	width: 70px;
-	animation-delay: 1.5s;
-	animation-name: pieceLeft;
-}
-.wrapper .container .two .content .piece {
-	background: linear-gradient(90deg, #ffedc081 0%, #ff9d8774 100%);
-}
-.wrapper .container .two .content .piece:nth-child(1) {
-	left: 0%;
-	top: 25%;
-	height: 40px;
-	width: 120px;
-	animation-delay: 2s;
-	animation-name: pieceLeft;
-}
-.wrapper .container .two .content .piece:nth-child(2) {
-	right: 15%;
-	top: 35%;
-	width: 180px;
-	height: 50px;
-	animation-delay: 2.5s;
-	animation-name: pieceRight;
-}
-.wrapper .container .two .content .piece:nth-child(3) {
-	right: 10%;
-	top: 80%;
-	height: 20px;
-	width: 160px;
-	animation-delay: 3s;
-	animation-name: pieceRight;
-}
-.wrapper .container .three .content .piece {
-	background: #fb8a8a;
-}
-.wrapper .container .three .content .piece:nth-child(1) {
-	left: 25%;
-	top: 35%;
-	height: 20px;
-	width: 80px;
-	animation-name: pieceLeft;
-	animation-delay: 3.5s;
-}
-.wrapper .container .three .content .piece:nth-child(2) {
-	right: 10%;
-	top: 55%;
-	width: 140px;
-	height: 40px;
-	animation-name: pieceRight;
-	animation-delay: 4s;
-}
-.wrapper .container .three .content .piece:nth-child(3) {
-	left: 40%;
-	top: 68%;
-	height: 20px;
-	width: 80px;
-	animation-name: pieceLeft;
-	animation-delay: 4.5s;
-}
+
+
+
+
+
 
 canvas {
     display: block;
