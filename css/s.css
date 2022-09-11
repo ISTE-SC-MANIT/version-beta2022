@@ -107,9 +107,23 @@ nav .menu .menu_links {
 nav .menu .menu_links:hover {
 	opacity: 1;
 }
+
 @media screen and (max-width: 799px) {
-	nav .menu .menu_links {
-		display: none;
+	.menu_links {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		width: 100vw;
+		align-items: center;
+		height: 100vh;
+		transform: translateX(100%);
+		position: fixed;
+		top: 80px;
+		background: rgba(56, 18, 94, 0.849);
+		opacity: 1;
+	}
+	nav .menu{
+		opacity: 1;
 	}
 }
 nav .menu .menu_links .link {
