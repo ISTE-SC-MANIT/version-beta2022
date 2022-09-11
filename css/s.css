@@ -208,7 +208,7 @@ nav .menu .menu_icon:hover .icon:after {
 	overflow-x: hidden;
 }
 
-.imggg{
+.hackimg{
 	width: 400px;
 	z-index: 3;
 	animation: text 0.6s 1.8s ease backwards;
@@ -239,14 +239,14 @@ nav .menu .menu_icon:hover .icon:after {
 .wrapper .container .two,
 .wrapper .container .three,
 .wrapper .container .circle, */
-.wrapper .container .p404 {
+/* .wrapper .container .p404 { */
 	/* width: 60%;
 	height: 60%;
 	top: 20% !important;
 	left: 20% !important;
 	min-width: 400px;
 	min-height: 400px; */
-}
+/* } */
 /* .wrapper .container .one .content,
 .wrapper .container .two .content,
 .wrapper .container .three .content,
