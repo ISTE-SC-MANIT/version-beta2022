@@ -1,75 +1,121 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.container-schedule{
-    background-color: #ffffff00;
-    width: 100%;
+
+.container-schedule {
+    background-color: #14213d00;
+    width: auto;
+    /* min-height: 100%; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    min-height: 100%;
-    margin-top: 1rem;
+    padding: 5rem;
+    margin: auto;
 }
-.heading{
+
+.heading {
     font-size: 3em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #FCA311;
 }
-.center-text{
+
+.center-text {
     text-align: center;
 }
-ul{
+
+ul {
     background: none;
 }
-a{
+
+a {
     background: none;
 }
-li{
+
+li {
     background: none;
     list-style: none;
 }
-.time-link{
+
+.time-link {
     text-decoration: none;
     list-style: none;
     font-size: 1.2em;
     color: white;
 }
-.timeline-container{
+
+.timeline-container {
     margin: 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.content{
+.content {
     display: flex;
     color: white;
     font-size: 1.4em;
-    margin: 1em;
 }
-.appear-anim{
+
+.appear-anim {
     color: white;
     animation: appear;
     animation-duration: 2.5s;
 }
 
 @keyframes appear {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
 
-.link-border{
-    border:none;
-    box-shadow: 10px 0px 40px 10px rgba(255, 239, 66, 0.749);
-    background: rgba(29, 12, 183, 0.354);
+.link-border {
+    background: none;
+    text-decoration: underline;
+    color: rgb(4, 212, 156);
 }
-.time-content{
+
+.time-content {
     display: none;
 }
-h3{
-    margin: 1em;
+
+h3 {
+    margin-bottom: 0.5rem;
     font-size: 3em;
+}
+
+h4 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 700px) {
+    .timeline-container {
+        margin: 0;
+
+    }
+
+    .container {
+        width: 100%;
+        margin: 0.5rem;
+        margin-bottom: 5rem;
+    }
+
+    h3 {
+        font-size: 1.9rem;
+        margin: 1rem;
+    }
+
+    h4 {
+        font-size: 1.5rem
+    }
+
+    .heading {
+        margin-bottom: 1rem;
+    }
 }
