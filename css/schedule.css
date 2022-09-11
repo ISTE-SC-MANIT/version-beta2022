@@ -47,7 +47,7 @@ li{
 .appear-anim{
     color: white;
     animation: appear;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
 
 @keyframes appear {
@@ -62,7 +62,7 @@ li{
 .link-border{
     border:none;
     box-shadow: 10px 0px 40px 10px rgba(255, 239, 66, 0.749);
-    background: rgba(233, 220, 78, 0.354);
+    background: rgba(29, 12, 183, 0.354);
 }
 .time-content{
     display: none;
