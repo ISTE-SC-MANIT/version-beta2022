@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
 }
-.container{
-    background-color: #14213D;
+.container-schedule{
+    background-color: #ffffff00;
     width: 100%;
+    position: absolute;
     min-height: 100%;
+    margin-top: 1rem;
 }
 .heading{
     font-size: 3em;

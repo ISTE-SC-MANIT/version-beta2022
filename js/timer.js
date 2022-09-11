@@ -29,6 +29,6 @@ window.addEventListener('load', (event) => {
 	}, 500);
 
 	if (window.innerWidth < 799) {
-		document.querySelector('.wrapper').style.height = window.innerHeight + 'px';
+		document.querySelector('.wrapper-timer').style.height = window.innerHeight + 'px';
 	}
 });
