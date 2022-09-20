@@ -1,92 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Version ß</title>
+		<link rel="stylesheet" href="css/s.css" />
+		<link rel="stylesheet" href="css/timer.css" />
+		<link rel="stylesheet" href="css/schedule.css" />
+		<link rel="stylesheet" href="css/mobile.css" />
+		<link rel="stylesheet" href="css/sponsors.css" />
+		<link rel="stylesheet" href="css/particle.css" />
+		<link rel="stylesheet" href="css/faq.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<!-- stats.js lib -->
+		<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Version ß</title>
-	<link rel="stylesheet" href="css/s.css" />
-	<link rel="stylesheet" href="css/timer.css" />
-	<link rel="stylesheet" href="css/schedule.css">
-	<link rel="stylesheet" href="css/mobile.css">
-	<link rel="stylesheet" href="css/sponsors.css">
-	<link rel="stylesheet" href="css/particle.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js'></script>
-</head>
-
-<body>
-	<!-- <div id="particles-js"></div> -->
-	<div id="particles-js"><canvas id="3D-particle-effect-canvas"></canvas></div>
-	<nav>
-		<div class="menu" id="navbar">
-			<p class="website_name"><img src="images/ISTElogo.svg" alt="" /></p>
-			<div class="menu_links" id="nav-container">
-				<a href="" class="link">Home</a>
-				<a href="" class="link">About</a>
-				<a href="" class="link">Schedule</a>
-				<a href="" class="link">Prizes</a>
-				<a href="" class="link">Gallery</a>
-				<a href="" class="link">Sponsors</a>
-				<a href="" class="link">FAQs</a>
-			</div>
-			<div class="menu_icon">
-				<span class="icon"></span>
-			</div>
+	<body>
+		<!-- <div id="particles-js"></div> -->
+		<div id="particles-js">
+			<canvas id="3D-particle-effect-canvas"></canvas>
 		</div>
-	</nav>
-
-	<section class="wrapper">
-
-		<div class="container">
-
-			<p class="p404" data-depth="0.10">
-				<img src="./images/VB LOGO w.svg" class="version-logo" alt="">
-			</p>
-
-			<div class="text">
-				<article>
-					<!-- <p>Version Beta 5.0</p> -->
-					<p>Powered By</p>
-					<img src="./images/seekho Logo.png" class="seekho-logo" alt="" />
-					<!-- <p>An ISTE SC Manit Bhopal Event</p> -->
-					<button>Register Now</button>
-					<div class="social">
-						<button>Dashboard</button>
-						<div class="discord"><button><i class="fa-brands fa-discord"></i>Join Discord</button></div>
-					</div>
-				</article>
+		<nav>
+			<div class="menu" id="navbar">
+				<p class="website_name"><img src="images/ISTElogo.svg" alt="" /></p>
+				<div class="menu_links" id="nav-container">
+					<a href="" class="link">Home</a>
+					<a href="" class="link">About</a>
+					<a href="" class="link">Schedule</a>
+					<a href="" class="link">Prizes</a>
+					<a href="" class="link">Gallery</a>
+					<a href="" class="link">Sponsors</a>
+					<a href="" class="link">FAQs</a>
+				</div>
+				<div class="menu_icon">
+					<span class="icon"></span>
+				</div>
 			</div>
-		</div>
-		<div class="hackimg">
-			<img src="./images/WhatsApp_Image_2022-09-11_at_1.09.56_AM-removebg-preview22.png" alt="">
-			<ul class="timer__content">
-				<li class="timer__item">
-					<p class="timer__name">days</p>
-					<span id="days" class="timer__number"></span>
-				</li>
-				<li class="timer__item">
-					<p class="timer__name">hours</p>
-					<span id="hours" class="timer__number"></span>
-				</li>
-				<li class="timer__item">
-					<p class="timer__name">minutes</p>
-					<span id="minutes" class="timer__number"></span>
-				</li>
-				<li class="timer__item">
-					<p class="timer__name">seconds</p>
-					<span id="seconds" class="timer__number"></span>
-				</li>
-			</ul>
-			<p class="timer__text">Version Beta 5.0 Coming soon ...</p>
-		</div>
-		<!-- <div class="mobile">
+		</nav>
+
+		<section class="wrapper">
+			<div class="container">
+				<p class="p404" data-depth="0.10">
+					<img src="./images/VB LOGO.png" class="version-logo" alt="" />
+				</p>
+
+				<div class="text">
+					<article>
+						<!-- <p>Version Beta 5.0</p> -->
+						<p>Powered By</p>
+						<img src="./images/seekho Logo.png" class="seekho-logo" alt="" />
+						<!-- <p>An ISTE SC Manit Bhopal Event</p> -->
+						<button>Register Now</button>
+						<div class="social">
+							<button>Dashboard</button>
+							<div class="discord">
+								<button>
+									<i class="fa-brands fa-discord"></i>Join Discord
+								</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="hackimg">
+				<img src="./images/hackathon--.png" alt="" />
+				<ul class="timer__content">
+					<li class="timer__item">
+						<p class="timer__name">days</p>
+						<span id="days" class="timer__number"></span>
+					</li>
+					<li class="timer__item">
+						<p class="timer__name">hours</p>
+						<span id="hours" class="timer__number"></span>
+					</li>
+					<li class="timer__item">
+						<p class="timer__name">minutes</p>
+						<span id="minutes" class="timer__number"></span>
+					</li>
+					<li class="timer__item">
+						<p class="timer__name">seconds</p>
+						<span id="seconds" class="timer__number"></span>
+					</li>
+				</ul>
+				<p class="timer__text">Version Beta 5.0 Coming soon ...</p>
+			</div>
+			<!-- <div class="mobile">
 			<div class="notch"></div>
 			<div class="timer">
 				<ul class="timer__content">
@@ -112,290 +117,444 @@
 				<img src="./images/WhatsApp_Image_2022-09-11_at_1.09.56_AM-removebg-preview.png" class="hack" alt="">
 			</div>
 		</div> -->
-	</section>
-	<div class="about-container">
-		<h1 class="about-heading">About</h1>
-		<div class="about-content">
-			<div class="about-left">
-			</div>
-			<div class="about-right">
-				<p>Version Beta is the conjugation of some of the nation's greatest technological minds, with an ideal
-					platform for technology enthusiasts to demonstrate their talents and ingenuity.
-
-					After successfully organizing its first-ever digital variation last year we are back this year,
-					grander
-					than ever, with a diverse array of activities, including the synchronized delivery of workshops,
-					guest
-					lectures by persons of the highest calibre in the sectors of technology and entrepreneurship.
-					Accompanied by a 36 hour long, Central India’s largest ‘Hackathon’ which allows participants to put
-					their intellect to the test, be acknowledged and rewarded, and get new learning experiences.
-
-					In a stroke, Version Beta is the souls' satisfier of tech aficionados while also fostering the next
-					generation of developers, thinkers, and entrepreneurs.</p>
-			</div>
-		</div>
-	</div>
-	<div class="mascot-container">
-		<h1 class="mascot-heading">Mascot</h1>
-		<div class="mascot-content">
-			<div class="mascot-left">
-				<p>Blaze-The Fiery Phoenix is, as given by the name, flamed by his will to remain immortal and young
-					forever. He liked everything about youth, and the energy it had held. Unlike the villains who would
-					bewitch the world with beauty, Blaze just wanted immortality to soar high into the sky so that he
-					could
-					have the honour to meet his mentor, The Sun. <br> <br>
-					But life was never a cakewalk for Blaze. No one was ever good to Blaze as he was the best-looking
-					one
-					among them all and he was the only one who could code. His feathers shone brighter than the light
-					reflecting from oceans in the day. Hence, no one missed a chance to grab some of his feathers and
-					soon
-					enough, Blaze lost them all and became an old bald bird that couldn’t fly. He was devastated and his
-					dream to be young and soar high seemed to have shattered. That’s when his mentor’s words echoed in
-					his
-					mind. “Every problem comes with a breakthrough and the one who fails to find one never gets one”.
-					Blaze
-					started to wail for the Sun to ask him what he could do but received no response. <br> <br>
-					Our mascot gives out a message that an ending could be a possible beginning of something much more
-					enthralling and to do your best until the very end of everything. Don’t fear a backlash and when
-					faced
-					with one just focus on what you can do.
-				</p>
-			</div>
-			<div class="mascot-right">
-				<img src="./images/Fan_Art__And_More_-removebg-preview.png" class="img" alt="">
-			</div>
-		</div>
-	</div>
-	<div class="container-schedule">
-
-		<h2 class="schedule-heading center-text">Schedule</h2>
-
-		<ul class="timeline-container">
-			<li><a href="#" class="time-link link-border">Day01</a></li>
-			<li><a href="#" class="time-link">Day02</a></li>
-			<li><a href="#" class="time-link">Day03</a></li>
-			<li><a href="#" class="time-link">Day04</a></li>
-			<li><a href="#" class="time-link">Day05</a></li>
-		</ul>
-
-		<div class="content">
-			<div id="1" class="time-content appear-anim">
-				<h3>Registration Opens</h3>
-				<h4>September 26, 2022</h4>
-				<p>September 26, 2022
-					“The people who are crazy enough to think they can change the world are the ones who do.”
-					~Steve Jobs
-
-					Registrations for the fourth edition of Central India's Largest Student-Held Hackathon begins! Put
-					forward your
-					idea and
-					make your way to the real Hack.</p>
-			</div>
-			<div id="2" class="time-content appear-anim">
-				<h3>Idea Submission Phase</h3>
-				<h4>September 26 - October 21, 2022</h4>
-				<p>Never allow waiting to become a habit because life is happening now
-
-					So, register your team now for the 36-hour long coding adventure. This is the end of the Ideation
-					phase, the
-					last chance
-					for the enrolled members to submit their CV and GitHub profiles.</p>
-			</div>
-			<div id="3" class="time-content appear-anim">
-				<h3>Short list announcement</h3>
-				<h4>October 22, 2022</h4>
-				<p>Never allow waiting to become a habit because life is happening now
-
-					So, register your team now for the 36-hour long coding adventure. This is the end of the Ideation
-					phase, the
-					last chance
-					for the enrolled members to submit their CV and GitHub profiles.</p>
-			</div>
-			<div id="4" class="time-content appear-anim">
-				<h3>Team Registration</h3>
-				<h4>October 22, 2022</h4>
-				<p>Waiting should never become a habit since life is happening right now.
-
-					So, selected contestants should make no holds barred and enlist their teams.</p>
-			</div>
-			<div id="5" class="time-content appear-anim">
-				<h3>Hackathon</h3>
-				<h4>November 04-06, 2022</h4>
-				<p>Every truly novel concept appears insane at first, so come present yours.
-
-					The time for brainstorming is over; now it's the time to code and deliver Hackathon presentations.
-				</p>
-			</div>
-
-
-		</div>
-	</div>
-	<section id="sponsors--section">
-		<div class="heading">Sponsors</div>
-		<div class="sponsors">
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/Celo Logo Color@2x.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/Devfolio_Logo-Colored.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/Diginique Techlabs.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/echo3D - Logo 2021 - Dark.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/ekeeda-logo.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/ELearnmarket Logo.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/Filecoin Coloured White Text.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/foxmula.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/techcryptors.png"
-					alt=""
-			/></a>
-
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/GMC LogoS.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/hoverRobotix.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/Mentor.x.png"
-					alt=""
-			/></a>
-
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/Polygon_Logo-Dark.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/seekho.jpeg"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/sponsor.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/taskade-logo.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/GDG Chapter lockup - GDG Bhopal.png"
-					alt=""
-			/></a>
-			<a class="sponsors--i" href="#">
-				<img
-					src="./images/sponsors/Tezos_Logo-Colored@2x.png"
-					alt=""
-			/></a>
-		</div>
-		<div id="past-sponsors">
-			<div class="heading">Our Past Sponsors</div>
-			<div class="slider">
-				<div class="slide slide--1">
-				  <div class="sponsors--p">
-				  <a href="" class="sponsors--i--p">
-							<img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						 </a>
-				  <a href="" class="sponsors--i--p">
-							<img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						 </a>
-				  <a href="" class="sponsors--i--p">
-							<img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						 </a>
-				  <a href="" class="sponsors--i--p">
-							<img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						 </a>
-				  </div>
-
-			   </div>
-				<div class="slide slide--2">
-					<div class="sponsors--p">
-						<a href="" class="sponsors--i--p">
-						  <img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						</a>
-						<a href="" class="sponsors--i--p">
-						  <img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						</a>
-						<a href="" class="sponsors--i--p">
-						  <img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						</a>
-						<a href="" class="sponsors--i--p">
-						  <img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						</a>
-				  
-					</div>
+		</section>
+		<div class="about-container">
+			<h1 class="about-heading">About</h1>
+			<div class="about-content">
+				<div class="about-left"></div>
+				<div class="about-right">
+					<p>
+						Version Beta is the conjugation of some of the nation's greatest
+						technological minds, with an ideal platform for technology
+						enthusiasts to demonstrate their talents and ingenuity. After
+						successfully organizing its first-ever digital variation last year
+						we are back this year, grander than ever, with a diverse array of
+						activities, including the synchronized delivery of workshops, guest
+						lectures by persons of the highest calibre in the sectors of
+						technology and entrepreneurship. Accompanied by a 36 hour long,
+						Central India’s largest ‘Hackathon’ which allows participants to put
+						their intellect to the test, be acknowledged and rewarded, and get
+						new learning experiences. In a stroke, Version Beta is the souls'
+						satisfier of tech aficionados while also fostering the next
+						generation of developers, thinkers, and entrepreneurs.
+					</p>
 				</div>
-				<div class="slide slide--3">
-				   <div class="sponsors--p">
-						<a href="" class="sponsors--i--p">
-						  <img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						</a>
-						<a href="" class="sponsors--i--p">
-						  <img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						</a>
-						<a href="" class="sponsors--i--p">
-						  <img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						</a>
-						<a href="" class="sponsors--i--p">
-						  <img src="./images/sponsors/Diginique Techlabs.png" alt="">
-						</a>
-				  
-				 </div>
-			  </div>
-			  <!-- <button class="slider__btn slider__btn--left">&larr;</button>
+			</div>
+		</div>
+		<div class="mascot-container">
+			<h1 class="mascot-heading">Mascot</h1>
+			<div class="mascot-content">
+				<div class="mascot-left">
+					<p>
+						Blaze-The Fiery Phoenix is, as given by the name, flamed by his will
+						to remain immortal and young forever. He liked everything about
+						youth, and the energy it had held. Unlike the villains who would
+						bewitch the world with beauty, Blaze just wanted immortality to soar
+						high into the sky so that he could have the honour to meet his
+						mentor, The Sun. <br />
+						<br />
+						But life was never a cakewalk for Blaze. No one was ever good to
+						Blaze as he was the best-looking one among them all and he was the
+						only one who could code. His feathers shone brighter than the light
+						reflecting from oceans in the day. Hence, no one missed a chance to
+						grab some of his feathers and soon enough, Blaze lost them all and
+						became an old bald bird that couldn’t fly. He was devastated and his
+						dream to be young and soar high seemed to have shattered. That’s
+						when his mentor’s words echoed in his mind. “Every problem comes
+						with a breakthrough and the one who fails to find one never gets
+						one”. Blaze started to wail for the Sun to ask him what he could do
+						but received no response. <br />
+						<br />
+						Our mascot gives out a message that an ending could be a possible
+						beginning of something much more enthralling and to do your best
+						until the very end of everything. Don’t fear a backlash and when
+						faced with one just focus on what you can do.
+					</p>
+				</div>
+				<div class="mascot-right">
+					<img
+						src="./images/Fan_Art__And_More_-removebg-preview.png"
+						class="img"
+						alt=""
+					/>
+				</div>
+			</div>
+		</div>
+		<div class="container-schedule">
+			<h2 class="schedule-heading center-text">Schedule</h2>
+
+			<ul class="timeline-container">
+				<li><a href="#" class="time-link link-border">Day01</a></li>
+				<li><a href="#" class="time-link">Day02</a></li>
+				<li><a href="#" class="time-link">Day03</a></li>
+				<li><a href="#" class="time-link">Day04</a></li>
+				<li><a href="#" class="time-link">Day05</a></li>
+			</ul>
+
+			<div class="content">
+				<div id="1" class="time-content appear-anim">
+					<h3>Registration Opens</h3>
+					<h4>September 26, 2022</h4>
+					<p>
+						September 26, 2022 “The people who are crazy enough to think they
+						can change the world are the ones who do.” ~Steve Jobs Registrations
+						for the fourth edition of Central India's Largest Student-Held
+						Hackathon begins! Put forward your idea and make your way to the
+						real Hack.
+					</p>
+				</div>
+				<div id="2" class="time-content appear-anim">
+					<h3>Idea Submission Phase</h3>
+					<h4>September 26 - October 21, 2022</h4>
+					<p>
+						Never allow waiting to become a habit because life is happening now
+						So, register your team now for the 36-hour long coding adventure.
+						This is the end of the Ideation phase, the last chance for the
+						enrolled members to submit their CV and GitHub profiles.
+					</p>
+				</div>
+				<div id="3" class="time-content appear-anim">
+					<h3>Short list announcement</h3>
+					<h4>October 22, 2022</h4>
+					<p>
+						Never allow waiting to become a habit because life is happening now
+						So, register your team now for the 36-hour long coding adventure.
+						This is the end of the Ideation phase, the last chance for the
+						enrolled members to submit their CV and GitHub profiles.
+					</p>
+				</div>
+				<div id="4" class="time-content appear-anim">
+					<h3>Team Registration</h3>
+					<h4>October 22, 2022</h4>
+					<p>
+						Waiting should never become a habit since life is happening right
+						now. So, selected contestants should make no holds barred and enlist
+						their teams.
+					</p>
+				</div>
+				<div id="5" class="time-content appear-anim">
+					<h3>Hackathon</h3>
+					<h4>November 04-06, 2022</h4>
+					<p>
+						Every truly novel concept appears insane at first, so come present
+						yours. The time for brainstorming is over; now it's the time to code
+						and deliver Hackathon presentations.
+					</p>
+				</div>
+			</div>
+		</div>
+		<section id="sponsors--section">
+			<div class="heading">Sponsors</div>
+			<div class="sponsors">
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/Celo Logo Color@2x.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/Devfolio_Logo-Colored.png" alt=""
+				/></a>
+				<a class="sponsors--i" class="sponsors--i" href="#">
+					<img src="./images/sponsors/Diginique Techlabs.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/echo3D - Logo 2021 - Dark.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/ekeeda-logo.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/ELearnmarket Logo.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/Filecoin Coloured White Text.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/foxmula.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/techcryptors.png" alt=""
+				/></a>
+
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/GMC LogoS.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/hoverRobotix.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/Mentor.x.png" alt=""
+				/></a>
+
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/Polygon_Logo-Dark.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/seekho.jpeg" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/sponsor.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/taskade-logo.png" alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img
+						src="./images/sponsors/GDG Chapter lockup - GDG Bhopal.png"
+						alt=""
+				/></a>
+				<a class="sponsors--i" href="#">
+					<img src="./images/sponsors/Tezos_Logo-Colored@2x.png" alt=""
+				/></a>
+			</div>
+			<div id="past-sponsors">
+				<div class="heading">Our Past Sponsors</div>
+				<div class="slider">
+					<div class="slide slide--1">
+						<div class="sponsors--p">
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="slide slide--2">
+						<div class="sponsors--p">
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="slide slide--3">
+						<div class="sponsors--p">
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="slide slide--4">
+						<div class="sponsors--p">
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+							<a href="" class="sponsors--i--p">
+								<img src="./images/sponsors/Diginique Techlabs.png" alt="" />
+							</a>
+						</div>
+					</div>
+					<!-- <button class="slider__btn slider__btn--left">&larr;</button>
 				<button class="slider__btn slider__btn--right">&rarr;</button> -->
 				</div>
-				</div>
-			 <!-- </div> -->
-			 
-			</section>
-
+			</div>
+			<!-- </div> -->
+		</section>
+		<section class="faq">
+			<div class="heading--faq"><h1>FAQ's</h1></div>
+			<div style="width: 100%;"><main class="main--faq">
+			
+				<section class="card">
+					<!-- cube img -->
+					<img
+						src="images/illustration-box-desktop.svg"
+						alt="Box"
+						class="card__box"
+					/>
+					<!-- Images -->
+					<div class="card__img">
+						<!-- mobile -->
+						<img
+							class="card__img-mobile"
+							src="images/illustration-woman-online-mobile.svg"
+							alt="Woman online Mobile"
+						/>
+						<!-- desktop -->
+						<img
+							class="card__img-desktop"
+							src="images/illustration-woman-online-desktop.svg"
+							alt="Woman online desktop"
+						/>
+					</div>
+	
+					<!-- Text -->
+					<div class="card__text">
+					
+	
+						<div class="accordion">
+							<!-- item 1 -->
+							<div class="accordion__item">
+								<button class="accordion__title">Who are we?</button>
+	
+								<div class="accordion__collapse collapse">
+									<div class="accordion__text">
+										ISTE SC MANIT is one of the oldest societies of MANIT. We've
+										been awarded as the best students' chapter in MP -
+										Chhattisgarh region three times in a row. So when it comes to
+										organising technical events, we're always at the top of the
+										food chain.
+									</div>
+								</div>
+							</div>
+							<!-- item 2 -->
+							<div class="accordion__item">
+								<button class="accordion__title open">
+									What is version beta?
+								</button>
+	
+								<div class="accordion__collapse collapse open">
+									<div class="accordion__text">
+										It's Central India's largest students' held Hackathon in which
+										students from all over the country compete against each other
+										for 36 hours non-stop and put their coding skills to test.
+									</div>
+								</div>
+							</div>
+							<!-- item 3 -->
+							<div class="accordion__item">
+								<button class="accordion__title">Who should participate?</button>
+	
+								<div class="accordion__collapse collapse">
+									<div class="accordion__text">
+										If you are a college student who is interested in solving
+										real-life problems through the virtual world of your laptop
+										screens, you're at the right place. The Hackathon is just for
+										you.
+									</div>
+								</div>
+							</div>
+							<!-- item 4 -->
+							<div class="accordion__item">
+								<button class="accordion__title">
+									Number of members in a team?
+								</button>
+	
+								<div class="accordion__collapse collapse">
+									<div class="accordion__text">
+										The maximum no. of team members is 4. You can also participate
+										in a team of 3 or 2 members. It's up to you. Choose your
+										crewmates carefully to prevent being ejected.
+									</div>
+								</div>
+							</div>
+							<!-- item 5 -->
+							<div class="accordion__item">
+								<button class="accordion__title">How to participate?</button>
+	
+								<div class="accordion__collapse collapse">
+									<div class="accordion__text">
+										Visit our website to register for the Hackathon. You'll be
+										provided all the details there.
+									</div>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__title">
+									What is selection procedure?
+								</button>
+	
+								<div class="accordion__collapse collapse">
+									<div class="accordion__text">
+										Upload your GitHub profiles and CV while registering through
+										Devfolio and you're all done. All the best!
+									</div>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__title">
+									What are we looking in a team?
+								</button>
+	
+								<div class="accordion__collapse collapse">
+									<div class="accordion__text">
+										You don't need to be a coding genius to participate in the
+										event. The only requirement is your willingness and passion to
+										learn. There is a winner among us and it can be you. So buckle
+										up coz we're gonna make you an offer you can't refuse..
+									</div>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__title">
+						 What is the goal of the Hackathon?		</button>
+	
+								</button>
+	
+								<div class="accordion__collapse collapse">
+									<div class="accordion__text">
+										The main aim of Hackathon is to bring out the coding skills of
+										students to practical use.
+									</div>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__title">
+									How would I know if I got selected?
+								</button>
+	
+								<div class="accordion__collapse collapse">
+									<div class="accordion__text">
+										We'll mail you and let you know.
+									</div>
+								</div>
+							</div>
+							<div class="accordion__item">
+								<button class="accordion__title">
+									Cost for participation in Hackathon?
+								</button>
+	
+								<div class="accordion__collapse collapse">
+									<div class="accordion__text">
+										If you don't count the internet cost and the electricity bill
+										for your laptop, then it's zero. NIL. Nothing..
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main></div>
+		</section>
+		
 
 		<script src="js/schedule.js"></script>
+		<script src="js/faq.js"></script>
 		<script src="js/particle.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/sponsors.js"></script>
 		<script src="js/timer.js"></script>
 		<script src="js/nav.js"></script>
-		<script src="https://kit.fontawesome.com/3a4f34ed87.js" crossorigin="anonymous"></script>
-</body>
-
+		<script
+			src="https://kit.fontawesome.com/3a4f34ed87.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

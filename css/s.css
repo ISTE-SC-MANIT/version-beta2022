@@ -256,6 +256,9 @@ nav .menu .menu_icon:hover .icon:after {
 	/* margin-top: 5vh; */
 	flex-direction: column;
 }
+.hackimg img {
+	width: 87%;
+}
 
 .wrapper .container .p404 .content {
 	top: 50%;
@@ -362,7 +365,8 @@ nav .menu .menu_icon:hover .icon:after {
 .wrapper .container .text article button:hover {
 	box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);
 	transform: translateY(5px);
-	background: #fca311;
+	/* background:#fca311; */
+	background-color: rgba(9, 15, 46, 0.85);
 	color: white;
 }
 .wrapper .container .p404 {

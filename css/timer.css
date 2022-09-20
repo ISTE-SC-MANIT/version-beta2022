@@ -43,6 +43,10 @@
 .timer__content {
 	display: flex;
 	color: white;
+	display: flex;
+	/* justify-self: unset;
+	 */
+	justify-content: center;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	width: 95%;
@@ -68,7 +72,7 @@
 }
 .timer__item:nth-child(1) {
 	/* animation-delay: 0.2s; */
-	animation-delay: 2.0s;
+	animation-delay: 2s;
 }
 .timer__item:nth-child(2) {
 	/* animation-delay: 0.4s; */
