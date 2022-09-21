@@ -55,6 +55,7 @@
     color: #fff;
     grid-column-start: auto;
     grid-row-start: auto;
+    /* grid-row-end:span 2 ; */
     color: #fff;
     background-size: cover;
     background-position: center;
@@ -84,6 +85,7 @@
   }
   .gallery-item--large {
     grid-row-end: span 3;
+    grid-column-end: span 2;
   }
   .gallery-item--full {
     grid-column-end: auto;
@@ -96,6 +98,7 @@
   }
   #img1{
     background-image: url("../images/gallery-images/img2.jpeg");
+    /* background-size: contain; */
     
   }
   #img2{
@@ -124,5 +127,6 @@
   }
   #img8{
     background-image: url("../images/gallery-images/img5.jpeg");
+    /* background-size: contain; */
   
   }
