@@ -3,7 +3,7 @@
 }
 #sponsors--section {
 	/* background-color: white; */
-	margin-top: 2rem;
+	margin-top: 6rem;
 }
 .sponsors {
 	position: relative;
@@ -18,7 +18,7 @@
 	overflow: hidden;
 	padding-left: 3rem;
 }
-.heading {
+.heading--sponsor {
 	font-size: 4rem;
 	margin-top: 2rem;
 	color: #fca311;
