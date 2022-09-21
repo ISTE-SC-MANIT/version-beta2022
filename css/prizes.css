@@ -6,8 +6,8 @@
 #head {
 	z-index: 4;
 }
-#head-prize {
-}
+/* #head-prize {
+} */
 #head h1 {
 	color: #fca311;
 	font-size: 4rem;
@@ -35,7 +35,7 @@
 
 	/* position: absolute; */
 	position: relative;
-	background: url('/images/2nd-png.ec6eaee8.png');
+	background: url('../images/2nd-png.ec6eaee8.png');
 
 	bottom: 0;
 	background-size: contain;
@@ -46,7 +46,7 @@
 #prize--2 {
 	height: 500px;
 	width: 300px;
-	background: url('/images/1st-png.4842642d.png');
+	background: url('../images/1st-png.4842642d.png');
 	/* background-color: aquamarine; */
 	/* margin-bottom: 1rem; */
 	position: relative;
@@ -57,7 +57,7 @@
 }
 #prize--3 {
 	height: 400px;
-	background: url('/images/3rd-png.237640f4.png');
+	background: url('../images/3rd-png.237640f4.png');
 	width: 195px;
 	background-size: contain;
 	background-position: center;
