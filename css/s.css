@@ -54,7 +54,6 @@ body {
 	/* background: #14213d; */
 }
 
-
 .logo {
 	position: fixed;
 	z-index: 5;
@@ -367,7 +366,7 @@ nav .menu .menu_icon:hover .icon:after {
 	box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);
 	transform: translateY(5px);
 	/* background:#fca311; */
-	background-color: rgba(9, 15, 46, 0.85);
+	background-color: #fe1746;
 	color: white;
 }
 .wrapper .container .p404 {
@@ -408,7 +407,11 @@ canvas {
 		rgba(90, 92, 106, 1) 0%,
 		rgba(32, 45, 58, 1) 81.3%
 	); */
-	background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(13 6 39) 0%, rgb(44 25 25) 81.3%);
+	background-image: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgb(13 6 39) 0%,
+		rgb(44 25 25) 81.3%
+	);
 	/* background-image: url(''); */
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -637,7 +640,7 @@ canvas {
 		display: none;
 	}
 
-	.version-logo{
+	.version-logo {
 		margin-top: 250px;
 		overflow-y: hidden;
 		margin-inline: auto;
@@ -646,8 +649,8 @@ canvas {
 	}
 }
 
-@media (max-width: 500px){
-	.version-logo{
+@media (max-width: 500px) {
+	.version-logo {
 		margin-top: 150px;
 	}
 }
