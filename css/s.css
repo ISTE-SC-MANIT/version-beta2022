@@ -497,6 +497,7 @@ canvas {
 }
 
 .about-right {
+	opacity: 0.8;
 	margin: 0 2rem;
 	width: 40%;
 	text-align: justify;
