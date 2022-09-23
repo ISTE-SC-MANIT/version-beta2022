@@ -27,6 +27,11 @@
 	z-index: 3;
 	color: #fca311;
 }
+
+.accordion__title {
+	/* color: #0d6efd; */
+	content: '\2796';
+}
 .faq--items {
 	width: 50%;
 	margin: 2rem;
@@ -63,10 +68,10 @@
 	box-sizing: border-box;
 }
 .main--faq {
-	min-height: 100vh;
+	min-height: 66vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 	box-sizing: border-box;
 	color: white;
 	/* font-size: 62.5%; */
@@ -127,6 +132,7 @@
 	align-items: center;
 	width: 100%;
 	height: auto;
+	position: relative;
 }
 .accordion__item {
 	width: 80%;
@@ -146,6 +152,7 @@
 	width: 100%;
 	padding: 1.45rem 0.5rem;
 	border: none;
+
 	background: none;
 	font-family: 'Kumbh Sans', sans-serif;
 	/* font-size: 1.4rem;
@@ -190,39 +197,57 @@
 	padding: 0.5rem 3rem 2.2rem 0.5rem;
 	line-height: 1.2;
 	font-size: 16px;
+	display: none;
 	/* color: var(--textDarkBlue);
 	 */
 	color: #fca311;
 }
 
+.show {
+	transition: ease-in-out 2s;
+	opacity: 1;
+	display: block;
+	max-height: 500px;
+}
 /* JS Classes */
 .accordion__title.open {
 	font-weight: 700;
 	/* color: var(--textBlue); */
 }
 
-.accordion__title.open::after {
+.accordion__title.active::after {
 	transform: rotate(180deg);
 }
 
-.accordion__collapse.collapse {
+/* .accordion__collapse.collapse {
 	display: none;
-}
+} */
 .accordion__collapse {
 	height: auto;
 }
 
-.accordion__collapse.collapsing {
+/* .accordion__collapse.collapsing {
 	height: 0;
 	overflow: hidden;
 	transition: height 1s ease;
-}
+} */
 
-.accordion__collapse.open {
+/* .accordion__collapse.open {
 	display: block;
-}
+} */
 
 /* DESKTOP STYLE */
+.faq--right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.faq--left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 @media (min-width: 56em) {
 	/* .card__img,
 	.card__text {
@@ -275,6 +300,16 @@
 		flex-direction: column;
 		margin-right: -4rem;
 	}
+	.faq--right {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.faq--left {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 @media (max-width: 972px) {
 	.accordion {
@@ -292,6 +327,26 @@
 		align-items: center;
 		margin: 0rem;
 	}
+	/* .faq--right {
+		position: unset;
+		top: 0;
+		right: 0;
+	}
+	.faq--left {
+		position: unset;
+		top: 0;
+		left: 0;
+	} */
+	.faq--right {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.faq--left {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 @media (max-width: 501px) {
 	.accordion__title {
@@ -300,5 +355,15 @@
 	.accordion__text {
 		font-size: 12px;
 		/* text-align: center; */
+	}
+	.faq--right {
+		position: unset;
+		top: 0;
+		right: 0;
+	}
+	.faq--left {
+		position: unset;
+		top: 0;
+		left: 0;
 	}
 }
