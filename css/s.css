@@ -438,8 +438,8 @@ canvas {
 	); */
 	background-image: radial-gradient(
 		circle farthest-corner at 10% 20%,
-		rgb(13 6 39) 0%,
-		rgb(44 25 25) 81.3%
+		rgb(0, 0, 0) 0%,
+		rgb(2, 0, 34) 81.3%
 	);
 	/* background-image: url(''); */
 	background-repeat: no-repeat;
