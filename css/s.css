@@ -261,10 +261,10 @@ nav .menu .menu_icon:hover .icon:after {
 	width: 87%;
 }
 
-#hackimg{
+#hackimg {
 	animation: spin 4s linear infinite;
+	opacity: 0.85;
 }
-
 
 @keyframes spin {
 	0% {
@@ -272,26 +272,20 @@ nav .menu .menu_icon:hover .icon:after {
 	}
 
 	25% {
-
 		transform: translateY(-2%);
 	}
 
 	50% {
-
 		transform: translateY(-4%);
-
 	}
 
 	75% {
-
 		transform: translateY(-2%);
 	}
 
 	100% {
-
 		transform: translateY(0%);
 	}
-
 }
 
 .wrapper .container .p404 .content {
@@ -678,7 +672,7 @@ canvas {
 		/* height: 100vh; */
 	}
 
-	.wrapper .container{
+	.wrapper .container {
 		gap: 0;
 	}
 
@@ -700,15 +694,15 @@ canvas {
 	.version-logo {
 		margin-top: 100px;
 		height: 10vh;
-		width: auto ;
+		width: auto;
 	}
 
-	.seekho-logo{
+	.seekho-logo {
 		height: 3vh;
 		margin-bottom: 1rem;
 	}
 
-	.hackimg{
+	.hackimg {
 		margin-top: 1rem;
 	}
 
@@ -716,7 +710,7 @@ canvas {
 		min-height: fit-content;
 		margin: 30px 0;
 	}
-	.wrapper .container .p404{
+	.wrapper .container .p404 {
 		min-height: fit-content;
 	}
 }

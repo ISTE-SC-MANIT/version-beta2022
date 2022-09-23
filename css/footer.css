@@ -90,7 +90,7 @@ span i:hover {
 	margin-bottom: 55px;
 }
 
-.social {
+.social--footer {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -263,7 +263,7 @@ span i:hover {
 	.footerMiddle .address {
 		margin-bottom: 40px;
 	}
-	.footerRight .social {
+	.footerRight .social--footer {
 		margin-top: -10px;
 	}
 
