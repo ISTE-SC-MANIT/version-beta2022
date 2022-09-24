@@ -92,8 +92,20 @@ li {
 	/* background: none; */
 	text-decoration: underline;
 	color: rgb(4, 212, 156);
-	font-size: 30px;
+	font-size: 25px;
 	display: block;
+	animation: fontChange;
+	animation-duration: 0.5s;
+}
+
+@keyframes fontChange {
+	from{
+		font-size: 1.2em;
+	}
+	to{
+		font-size: 1.5em;
+	}
+	
 }
 .time-content {
 	display: none;
@@ -122,8 +134,38 @@ h4 {
 	cursor: pointer;
 }
 
+@media (min-width:822px){
+	.arrow{
+		display: none;
+	}
 
-@media (max-width: 900px) {
+	.time-link{
+		display: block;
+		margin-inline:auto ;
+	}
+	.time-link:hover{
+		cursor: pointer;
+		color: rgb(215, 215, 9);
+	}
+	@keyframes appearSlowly {
+		from{
+			opacity: 1;
+		}
+		to{
+			opacity: 0;
+		}
+	}
+	.link-border:hover{
+		color:rgb(4, 212, 156);
+	}
+	.time-link{
+		margin-inline: 1.5rem;
+	}
+	.timeline-container{
+		justify-content: space-around;
+	}
+}
+@media (max-width: 800px) {
 	.timeline-container {
 		margin: 0;
 		padding: 0;
