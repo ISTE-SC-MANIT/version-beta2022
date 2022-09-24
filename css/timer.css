@@ -50,6 +50,7 @@
 	overflow-y: hidden;
 	overflow-x: hidden;
 	width: 95%;
+	margin-top: 2rem;
 }
 .timer__item {
 	display: flex;
