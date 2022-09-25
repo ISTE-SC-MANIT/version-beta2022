@@ -26,7 +26,7 @@
 	align-items: baseline;
 	position: relative;
 	width: 100%;
-	padding: 0 10%;
+	padding: 0 6%;
 	overflow: hidden;
 }
 #prize--1 {
@@ -284,15 +284,15 @@
 }
 @media (min-width: 351px) and (max-width: 458px) {
 	#prize--2 {
-		height: 180px;
+		height: 205px;
 		width: 167px;
 	}
 	#prize--1 {
-		height: 164px;
+		height: 183px;
 		width: 118px;
 	}
 	#prize--3 {
-		height: 162px;
+		height: 181px;
 		/* background: url(../images/3rd-png.237640f4.png); */
 		width: 114px;
 	}
@@ -347,15 +347,15 @@
 }
 @media (max-width: 330px) {
 	#prize--2 {
-		height: 159px;
+		height: 178px;
 		width: 167px;
 	}
 	#prize--1 {
-		height: 141px;
+		height: 157px;
 		width: 118px;
 	}
 	#prize--3 {
-		height: 141px;
+		height: 158px;
 		/* background: url(../images/3rd-png.237640f4.png); */
 		width: 114px;
 	}

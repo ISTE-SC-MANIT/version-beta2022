@@ -24,6 +24,9 @@ body {
 	overflow-x: hidden;
 	/* overflow-y: hidden; */
 }
+* {
+	font-family: 'Montserrat', sans-serif;
+}
 h1:focus,
 h2:focus,
 h3:focus,
@@ -117,7 +120,6 @@ nav .menu .menu_links:hover {
 	.menu_links {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
 		width: 100%;
 		align-items: center;
 		font-size: 1.5rem;
@@ -145,8 +147,8 @@ nav .menu .menu_links .link {
 	color: white;
 	text-transform: uppercase;
 	font-weight: 500;
-	margin-right: 30px;
 	letter-spacing: 2px;
+	margin: 1.5rem;
 	position: relative;
 	transition: all 0.3s 0.2s ease;
 }
@@ -532,6 +534,7 @@ canvas {
 .about-content {
 	display: flex;
 	justify-content: space-around;
+	opacity: 0.8;
 }
 
 .about-left {
@@ -711,13 +714,14 @@ canvas {
 
 @media (max-width: 500px) {
 	.version-logo {
-		margin-top: 100px;
-		height: 10vh;
+		margin-top: 9rem;
+		height: 14vh;
 		width: auto;
 	}
 
 	.seekho-logo {
-		height: 3vh;
+		height: 5vh;
+		margin-top: 1rem;
 		margin-bottom: 1rem;
 	}
 

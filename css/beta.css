@@ -44,8 +44,8 @@
 	top: 0;
 	left: 0;
 	border: 10px solid;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	border-top: 0;
 	border-left: 0;
@@ -171,18 +171,23 @@
 }
 @media (max-width: 426px) {
 	.ring1 .particle {
-		height: 320px;
+		height: 300px;
 		width: 320px;
 		margin-left: 0px;
 	}
 	.ring2 .particle {
-		height: 320px;
+		height: 300px;
 		width: 320px;
 		margin-left: 0px;
 	}
 	.ring3 .particle {
-		height: 320px;
-		width: 320px;
+		height: 300px;
+		width: 300px;
 		margin-left: 0px;
+	}
+
+	.ring {
+		width: 300px;
+		height: 300px;
 	}
 }

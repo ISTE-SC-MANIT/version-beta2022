@@ -13,10 +13,10 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(310px, 310px));
-	column-gap: 5px;
+	column-gap: 30px;
 	row-gap: 40px;
 	overflow: hidden;
-	padding-left: 3rem;
+	padding-left: 7rem;
 }
 .heading--sponsor {
 	font-size: 4rem;
@@ -29,7 +29,7 @@
 	letter-spacing: 2px;
 }
 .sponsors--i img {
-	width: 70%;
+	width: 60%;
 	transition: all 0.5s;
 	height: auto;
 	cursor: pointer;
@@ -95,21 +95,23 @@
 	align-items: center;
 	overflow: hidden;
 }
-
-@media screen  and (max-width: 800px){
-	.sponsors{
+#--hu--spon {
+	width: 50%;
+}
+@media screen and (max-width: 800px) {
+	.sponsors {
 		margin-top: 3rem;
 		padding: 0;
 	}
-	.sponsors--i{
+	.sponsors--i {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	.heading--sponsor{
+	.heading--sponsor {
 		font-size: 2.5rem;
 	}
-	#past-sponsors .heading--sponsor{
+	#past-sponsors .heading--sponsor {
 		margin-top: 4rem;
 	}
 }
