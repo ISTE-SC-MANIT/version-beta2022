@@ -2,6 +2,15 @@
 // var scene = document.getElementById('scene');
 // var parallax = new Parallax(scene);
 
+const load = document.getElementById('preloader');
+const body = document.getElementById('body');
+
+function loadcomplete() {
+  load.style.display = 'none';
+  body.style.overflow = 'unset'
+  
+}
+
 
 const nav = document.querySelector('#navbar');
 window.onscroll = () => {
