@@ -1,5 +1,5 @@
 const iconOpen = document.querySelector('#open--nav--ham');
-const body = document.getElementById('body');
+const bodyNav = document.getElementById('body--nav');
 const iconClose = document.querySelector('#close--nav--ham');
 
 const navContainer = document.getElementById('nav-container');
@@ -11,7 +11,7 @@ iconOpen.addEventListener('click', (e) => {
 		// console.log('YES');
 		navContainer.style.transform = 'translateX(-5%)';
 		iconOpen.classList.add('hidden--nav--bur');
-		body.style.overflow = 'hidden';
+		bodyNav.style.overflow = 'hidden';
 		iconClose.classList.remove('hidden--nav--bur');
 		// iconClose.classList.add('nav--show--link');
 
@@ -25,7 +25,7 @@ iconOpen.addEventListener('click', (e) => {
 
 iconClose.addEventListener('click', (e) => {
 	iconOpen.classList.remove('hidden--nav--bur');
-	body.style.overflow = 'unset';
+	bodyNav.style.overflow = 'unset';
 	iconClose.classList.add('hidden--nav--bur');
 	navContainer.style.transform = 'translateX(100%)';
 	visible = false;
@@ -35,6 +35,10 @@ navLinks.forEach((navlink) => {
 	navlink.addEventListener('click', (e) => {
 		if (visible) {
 			visible = false;
+			navContainer.style.transform = 'translateX(100%)';
+			iconOpen.classList.remove('hidden--nav--bur');
+			bodyNav.style.overflow = 'unset';
+			iconClose.classList.add('hidden--nav--bur');
 			navContainer.style.transform = 'translateX(100%)';
 		}
 	});
