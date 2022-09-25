@@ -121,7 +121,7 @@
 						flatShading: THREE.FlatShading,
 					});
 
-				for (var i = 0; i < 200; i++) {
+				for (var i = 0; i < 300; i++) {
 					var mesh = new THREE.Mesh(geometryPR, materialPR);
 					mesh.position
 						.set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5)
