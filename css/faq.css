@@ -302,10 +302,11 @@
 }
 @media (max-width: 501px) {
 	.accordion__title {
-		font-size: 13px;
+		font-size: 16px;
 	}
 	.accordion__text {
-		font-size: 12px;
+		font-size: 15px;
+		text-align: justify;
 		/* text-align: center; */
 	}
 	.faq--right {
@@ -317,5 +318,9 @@
 		position: unset;
 		top: 0;
 		left: 0;
+	}
+	.card {
+		width: 100%;
+		margin: 0;
 	}
 }
