@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/beta.css">
 		<link rel="stylesheet" href="css/preloader.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Edu+VIC+WA+NT+Beginner&family=Indie+Flower&family=Montserrat:ital,wght@0,500;1,400&family=Patrick+Hand&family=Rubik+Burned&display=swap" rel="stylesheet">
 
 		<!-- <link rel="stylesheet" href="css/gallery.css"> -->
@@ -25,6 +26,7 @@
 		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 		<!-- stats.js lib -->
 		<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -40,13 +42,18 @@
 
 	<body onload="loadcomplete()" id="body--nav">
 		<div id="preloader">
-				<div class="loader">
-					<div class="text">
-						<img src="https://iste-sc-manit.github.io/version-beta2022/images/beta.png"/>
-					</div>
-					<span></span>
-					<span></span>
+			<div class="box">
+				<a class="logo"></a>
+				<div class="ring ring1">
+					<div class="particle"></div>
 				</div>
+				<div class="ring ring2">
+					<div class="particle"></div>
+				</div>
+				<div class="ring ring3">
+					<div class="particle"></div>
+				</div>
+			</div>
 		</div>
 		<!-- <div id="particles-js"></div> -->
 		<div id="particles-js">
@@ -130,32 +137,6 @@
 				</ul>
 				<p class="timer__text">Version Beta 5.0 Coming soon ...</p>
 			</div>
-			<!-- <div class="mobile">
-			<div class="notch"></div>
-			<div class="timer">
-				<ul class="timer__content">
-					<li class="timer__item">
-						<p class="timer__name">days</p>
-						<span id="days" class="timer__number"></span>
-					</li>
-					<li class="timer__item">
-						<p class="timer__name">hours</p>
-						<span id="hours" class="timer__number"></span>
-					</li>
-					<li class="timer__item">
-						<p class="timer__name">minutes</p>
-						<span id="minutes" class="timer__number"></span>
-					</li>
-					<li class="timer__item">
-						<p class="timer__name">seconds</p>
-						<span id="seconds" class="timer__number"></span>
-					</li>
-				</ul>
-			</div>
-			<div class="chip">
-				<img src="./images/WhatsApp_Image_2022-09-11_at_1.09.56_AM-removebg-preview.png" class="hack" alt="">
-			</div>
-		</div> -->
 		</section>
 		<div class="about-container" id="about">
 			<h1 class="about-heading">ABOUT</h1>
@@ -221,24 +202,29 @@
 		</div> -->
 		<div class="container-schedule" id="schedule">
 			<h2 class="schedule-heading center-text">SCHEDULE</h2>
-
+	
 			<ul class="timeline-container">
-				<a class="arrowB">
-					<img src="./images/leftArrow.svg" class="arrow" alt="">
-				</a>
-				<li><h3 href="#" class="time-link link-border">Day1</h3></li>
-				<li><h3 href="#" class="time-link">Day2</h3></li>
-				<li><h3 href="#" class="time-link">Day3</h3></li>
-				<li><h3 href="#" class="time-link">Day4</h3></li>
-				<li><h3 href="#" class="time-link">Day5</h3></li>
-				<a class="arrowF">
-					<img src="./images/rightArrow.svg" class="arrow" alt="">
-				</a>
+				<li>
+					<h3 href="#" class="time-link link-border">Registration</h3>
+				</li>
+				<li>
+					<h3 href="#" class="time-link">Ideation</h3>
+				</li>
+				<li>
+					<h3 href="#" class="time-link">Announcement</h3>
+				</li>
+				<li>
+					<h3 href="#" class="time-link">Team</h3>
+				</li>
+				<li>
+					<h3 href="#" class="time-link">Hackathon</h3>
+				</li>
 			</ul>
-
+	
+	
 			<div class="content">
 				<div id="1" class="time-content appear-anim">
-					<h3>Registration Opens</h3>
+					<!-- <h3>Registration Opens</h3> -->
 					<h4>September 26, 2022</h4>
 					<p>
 						September 26, 2022 “The people who are crazy enough to think they
@@ -249,7 +235,7 @@
 					</p>
 				</div>
 				<div id="2" class="time-content appear-anim">
-					<h3>Idea Submission Phase</h3>
+					<!-- <h3>Idea Submission Phase</h3> -->
 					<h4>September 26 - October 21, 2022</h4>
 					<p>
 						Never allow waiting to become a habit because life is happening now
@@ -259,7 +245,7 @@
 					</p>
 				</div>
 				<div id="3" class="time-content appear-anim">
-					<h3>Short list announcement</h3>
+					<!-- <h3>Short list announcement</h3> -->
 					<h4>October 22, 2022</h4>
 					<p>
 						Never allow waiting to become a habit because life is happening now
@@ -269,7 +255,7 @@
 					</p>
 				</div>
 				<div id="4" class="time-content appear-anim">
-					<h3>Team Registration</h3>
+					<!-- <h3>Team Registration</h3> -->
 					<h4>October 22, 2022</h4>
 					<p>
 						Waiting should never become a habit since life is happening right
@@ -287,6 +273,59 @@
 					</p>
 				</div>
 			</div>
+			<div class="swiper">
+				<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<h3>Registration</h3>
+					<h4>September 26, 2022</h4>
+					<p>
+						September 26, 2022 “The people who are crazy enough to think they
+						can change the world are the ones who do.” ~Steve Jobs Registrations
+						for the fourth edition of Central India's Largest Student-Held
+						Hackathon begins! Put forward your idea and make your way to the
+						real Hack.
+					</p>
+				</div>
+				<div class="swiper-slide">
+					<h3>Ideation</h3>
+					<h4>September 26 - October 21, 2022</h4>
+					<p>
+						Never allow waiting to become a habit because life is happening now
+						So, register your team now for the 36-hour long coding adventure.
+						This is the end of the Ideation phase, the last chance for the
+						enrolled members to submit their CV and GitHub profiles.
+					</p>
+				</div>
+				<div class="swiper-slide">
+					<h3>Short list Anouncement</h3>
+					<h4>October 22, 2022</h4>
+					<p>
+						Never allow waiting to become a habit because life is happening now
+						So, register your team now for the 36-hour long coding adventure.
+						This is the end of the Ideation phase, the last chance for the
+						enrolled members to submit their CV and GitHub profiles.
+					</p>
+				</div>
+				<div class="swiper-slide">
+					<h3>Team Registration</h3>
+					<h4>October 22, 2022</h4>
+					<p>
+						Waiting should never become a habit since life is happening right
+						now. So, selected contestants should make no holds barred and enlist
+						their teams.
+					</p>
+				</div>
+				<div class="swiper-slide">
+					<h3>Hackathon</h3>
+					<h4>November 04-06, 2022</h4>
+					<p>
+						Every truly novel concept appears insane at first, so come present
+						yours. The time for brainstorming is over; now it's the time to code
+						and deliver Hackathon presentations.
+					</p>
+				</div>
+			</div>
+			</div>
 		</div>
 		<section id="prize">
 			<div id="head"><h1 id="head--prize">PRIZES</h1></div>
@@ -294,39 +333,15 @@
 				<div id="prize--1" class="prize">
 					<!-- <div id="overlay"></div> -->
 					<button class="btn" id="btn--1">₹10,000</button>
-					<!-- <div class="content-- content--1 not-show">
-						<p class="content--prize heading">Prize: ₹15,000</p>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-							odio corrupti inventore illo ducimus, cupiditate et. Inventore,
-							ullam sed amet consequuntur harum fugiat animi commodi ipsam ad
-							cupiditate ipsa doloremque?
-						</p>
-					</div> -->
+					
 				</div>
 				<div id="prize--2" class="prize">
 					<button class="btn" id="btn--2">₹15,000</button>
-					<!-- <div class="content-- content--2 not-show">
-						<p class="content--prize heading">Prize: ₹15,000</p>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-							odio corrupti inventore illo ducimus, cupiditate et. Inventore,
-							ullam sed amet consequuntur harum fugiat animi commodi ipsam ad
-							cupiditate ipsa doloremque?
-						</p>
-					</div> -->
+					
 				</div>
 				<div id="prize--3" class="prize">
 					<button class="btn" id="btn--3">₹5,000</button>
-					<!-- <div class="content-- content--3">
-						<p class="content--prize heading">Prize: ₹15,000</p>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
-							odio corrupti inventore illo ducimus, cupiditate et. Inventore,
-							ullam sed amet consequuntur harum fugiat animi commodi ipsam ad
-							cupiditate ipsa doloremque?
-						</p>
-					</div> -->
+		
 				</div>
 			</div>
 		</section>
@@ -487,44 +502,6 @@
 			<!-- </div> --> -->
 			<!-- </div> -->
 		</section>
-
-		<!-- <section class="gallery" id="gallery">
-			<h1 class="gallery-heading">GALLERY</h1>
-			<div class="gallery-section">
-				<div class="gallery-grid">
-					<div id="img1" class="gallery-item">
-					</div>
-					<div id="img2" class="gallery-item gallery-item--large">
-					</div>
-					<div id="img3" class="gallery-item gallery-item--medium">
-					</div>
-					<div id="img4" class="gallery-item gallery-item--large">
-					</div>
-					<div id="img5" class="gallery-item gallery-item--full">
-					</div>
-					<div id="img6" class="gallery-item gallery-item--medium">
-					</div>
-					<!-- <div id="img7" class="gallery-item gallery-item--large">
-				  </div> -->
-					<!-- <div id="img8" class="gallery-item"> -->
-					<!-- </div> -->
-					<!-- <div class="gallery-item gallery-item--medium">
-				  </div>
-				  <div class="gallery-item gallery-item--large">
-				  </div>
-				  <div class="gallery-item">
-				  </div>
-				  <div class="gallery-item gallery-item--medium">
-				  </div>
-				  <div class="gallery-item gallery-item--medium">
-				  </div>
-				  <div class="gallery-item gallery-item--large">
-				  </div>
-				  <div class="gallery-item">
-				  </div> -->
-				<!-- </div> -->
-			<!-- </div> -->
-		<!-- </section> --> -->
 
 		<section class="gallery" id="gallery">
 			<h1>GALLERY</h1>
@@ -848,8 +825,3 @@
 		></script>
 	</body>
 </html>
-<!-- mascot comment out
-FAQ correction
-button colors on hover red
-particle speed, density
-navbar fix -->

@@ -18,6 +18,7 @@
 
 .schedule-heading {
 	font-size: 3em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: #fca311;
 	margin-bottom: 2rem;
 }
@@ -26,13 +27,7 @@
 	text-align: center;
 }
 
-/* ul { */
-/* background: none; */
-/* } */
 
-/* a { */
-/* background: none; */
-/* } */
 
 li {
 	/* background: none; */
@@ -44,30 +39,61 @@ li {
 	list-style: none;
 	font-size: 1.2em;
 	color: white;
-	display: none;
+	/* display: none; */
+	line-height: 2rem;
 	margin: auto;
+	margin-bottom: 10px;
 }
 
 .timeline-container {
-	margin: 0 3rem;
+	/* margin: 0 3rem; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	position: relative;
+	margin-bottom: 2rem;
 }
 
-.timeline-container li {
-	overflow-x: unset;
+.timeline-container li::after{
+	content: '';
+    position: absolute;
+    /* left: 50%; */
+    width: 100%;
+    /* top: 81%; */
+    bottom: 21%;
+    height: 3px;
+    /* background: #6AB6BB; */
+    background: #fca311;
+
 }
+
+.timeline-container li{
+	overflow-x: unset;
+	position: relative;
+}
+
+.timeline-container .time-link:nth-child(1):after{
+    content: '';
+    position: absolute;
+    left: calc(50% - 12.5px);
+    width: 25px;
+    bottom: 2%;
+    height: 25px;
+    background: #109CA5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgb(33 233 200 / 20%);
+}
+
 .content {
 	display: flex;
 	color: white;
 	font-size: 1.4em;
+	
 }
 
-.content p,
-h4 {
+.content p,h4{
 	opacity: 0.8;
 }
 
@@ -81,7 +107,7 @@ h4 {
 	from {
 		opacity: 0;
 	}
-
+	
 	to {
 		opacity: 1;
 	}
@@ -89,7 +115,7 @@ h4 {
 
 .link-border {
 	/* background: none; */
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	color: rgb(4, 212, 156);
 	font-size: 25px;
 	display: block;
@@ -98,24 +124,22 @@ h4 {
 }
 
 @keyframes fontChange {
-	from {
+	from{
 		font-size: 1.2em;
 	}
-	to {
+	to{
 		font-size: 1.5em;
 	}
+	
 }
 .time-content {
 	display: none;
-}
-.appear-anim {
-	opacity: 0.8;
 }
 
 h3 {
 	margin-bottom: 0rem;
 	min-height: 50px;
-	overflow-y: hidden;
+	overflow-y: hidden	;
 	font-size: 3em;
 }
 
@@ -135,49 +159,74 @@ h4 {
 	cursor: pointer;
 }
 
-@media (min-width: 822px) {
-	.arrow {
+.swiper{
+	color: white;
+	width: 95%;
+	/* margin: 0 4%; */
+	display: none;
+}
+
+.swiper .swiper-wrapper{
+	width: 90%;
+	text-align: justify;
+	margin: 0 4%;
+}
+.swiper-wrapper .swiper-slide h3{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+@media (min-width:822px){
+	.arrow{
 		display: none;
 	}
-
-	.time-link {
+	
+	.time-link{
 		display: block;
-		margin-inline: auto;
+		margin-inline:auto ;
 	}
-	.time-link:hover {
+	.time-link:hover{
 		cursor: pointer;
 		color: rgb(215, 215, 9);
 	}
 	@keyframes appearSlowly {
-		from {
+		from{
 			opacity: 1;
 		}
-		to {
+		to{
 			opacity: 0;
 		}
 	}
-	.link-border:hover {
-		color: rgb(4, 212, 156);
+	.link-border:hover{
+		color:rgb(4, 212, 156);
 	}
-	.time-link {
+	.time-link{
 		margin-inline: 1.5rem;
 	}
-	.timeline-container {
+	/* .timeline-container{
 		justify-content: space-around;
-	}
+	} */
 }
+
+/* Swiper content */
+/* Swiper content */
 @media (max-width: 800px) {
 	.timeline-container {
 		margin: 0;
 		padding: 0;
+		display: none;
+	}
+	.swiper{
+		display: block;
 	}
 
 	.container-schedule {
 		width: 100%;
 		margin: 0.1rem;
 		margin-top: 3rem;
+		margin-bottom: 2rem;
 		padding: 1rem;
-		height: 80vh;
+		height: max-content;
 	}
 
 	h3 {
@@ -193,26 +242,29 @@ h4 {
 		margin-bottom: 1rem;
 		letter-spacing: 2px;
 	}
-	.link-border {
+	.link-border{
 		font-size: 1.5em;
 		width: 120px;
 		display: block;
 	}
-	.arrow {
+	.arrow{
 		width: 30px;
 	}
 }
 
-@media screen and (max-width: 800px) {
-	.time-link {
+@media screen and  (max-width: 800px)
+{
+	.time-link{
 		text-align: center;
 	}
-	.content {
+	.content{
 		text-align: justify;
+		display: none;
 		padding: 0 5%;
 	}
-	.appear-anim h3 {
+	.appear-anim h3{
 		text-align: center;
 		margin: 1rem 0;
 	}
 }
+	
