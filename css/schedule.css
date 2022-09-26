@@ -28,7 +28,7 @@
 	font-size: 3.5rem;
 	font-weight: 600;
 	letter-spacing: 9px;
-
+	overflow: hidden;
 	/* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 	color: #fca311;
 	margin-bottom: 2rem;

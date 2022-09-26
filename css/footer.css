@@ -60,6 +60,11 @@
 
 .center-text{
 	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+	padding-bottom: 8px;
 }
 
 .social-link-container{
@@ -87,5 +92,8 @@
 @media (max-width:800px){
 	.footer-container{
 		flex-direction: column;
+	}
+	.footer-left,.footer-mid,.footer-right{
+		width: 50%;
 	}
 }
