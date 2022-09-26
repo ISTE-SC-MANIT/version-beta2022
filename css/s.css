@@ -431,7 +431,7 @@ nav .menu .menu_icon:hover .icon:after {
 }
 
 .mlh-logo {
-	width: 20vw;
+	width: 17vw;
 	/* margin-bottom: 3rem; */
 }
 
@@ -756,7 +756,10 @@ canvas {
 		height: auto;
 		/* height: 100vh; */
 	}
-
+	nav .menu .menu_links{
+		justify-content: space-around;
+		padding-bottom: 35%;
+		}
 	.wrapper .container {
 		gap: 0;
 		justify-content: start;
@@ -802,5 +805,8 @@ canvas {
 	}
 	.wrapper .container .p404 {
 		min-height: fit-content;
+	}
+	#mlh-trust-badge{
+		max-width: 70px;
 	}
 }
