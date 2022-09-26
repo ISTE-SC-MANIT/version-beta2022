@@ -6,7 +6,10 @@ const load = document.getElementById('preloader');
 const body = document.getElementById('body');
 const mlhLogo = document.getElementById('mlh-trust-badge');
 const imgMlh = document.getElementById('img--mlh');
-
+const goToTopButton = document.querySelector('.go-to-top__button');
+goToTopButton.addEventListener('click', () => {
+	window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 setTimeout(function loadcomplete() {
 	load.style.display = 'none';
 	body.style.overflow = 'unset';
@@ -21,6 +24,11 @@ window.onscroll = () => {
 		nav.style.backgroundColor = 'rgba(9, 15, 46, 1)';
 	} else {
 		nav.style.backgroundColor = 'rgba(9, 15, 46, 0.9)';
+	}
+	if (window.scrollY > 300) {
+		goToTopButton.classList.add('show');
+	} else {
+		goToTopButton.classList.remove('show');
 	}
 };
 

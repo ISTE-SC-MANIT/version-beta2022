@@ -352,11 +352,11 @@ nav .menu .menu_icon:hover .icon:after {
 	}
 }
 
-.logo-D{
+.logo-D {
 	height: 40%;
 }
 
-.dev-button:hover .logo-D{
+.dev-button:hover .logo-D {
 	fill: white;
 }
 
@@ -450,14 +450,14 @@ nav .menu .menu_icon:hover .icon:after {
 	transition: all 0.3s ease;
 }
 
-.dev-button{
+.dev-button {
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
 }
 
-.dev-D{
+.dev-D {
 	height: 40%;
 }
 
@@ -649,12 +649,40 @@ canvas {
 	font-size: 20px;
 	overflow: hidden;
 }
+#home {
+	z-index: 10;
+}
 
 .mascot-right {
 	text-align: center;
 	margin-top: 2rem;
 	width: 50%;
 	height: 500px;
+}
+.go-to-top__button {
+	position: fixed;
+	bottom: 20px;
+	background: none;
+	display: none;
+	z-index: 9;
+	right: 20px;
+	transform: rotateZ(-45deg);
+}
+.go-to-top__button .show {
+	display: block;
+}
+
+#rocket__button {
+	color: white;
+	height: 32px;
+	transition: all 0.4s;
+
+	width: 32px;
+	cursor: pointer;
+	animation: spin 2s infinite;
+}
+#rocket__button:hover {
+	color: #fca311;
 }
 
 @media screen and (max-width: 1100px) {
@@ -756,10 +784,10 @@ canvas {
 		height: auto;
 		/* height: 100vh; */
 	}
-	nav .menu .menu_links{
+	nav .menu .menu_links {
 		justify-content: space-around;
 		padding-bottom: 35%;
-		}
+	}
 	.wrapper .container {
 		gap: 0;
 		justify-content: start;
@@ -806,7 +834,7 @@ canvas {
 	.wrapper .container .p404 {
 		min-height: fit-content;
 	}
-	#mlh-trust-badge{
+	#mlh-trust-badge {
 		max-width: 70px;
 	}
 }
