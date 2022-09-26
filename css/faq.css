@@ -54,7 +54,7 @@
 	box-sizing: border-box;
 }
 .main--faq {
-	min-height: 32rem;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	/* align-items: center; */

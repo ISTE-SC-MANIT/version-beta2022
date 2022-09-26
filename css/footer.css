@@ -8,7 +8,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	color: white;
 	background-color: rgba(11, 32, 70, 0.541);
