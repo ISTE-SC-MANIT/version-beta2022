@@ -302,6 +302,9 @@ nav .menu .menu_icon:hover .icon:after {
 	flex-direction: column;
 	position: relative;
 	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding-top: 5rem;
 }
 
 .version-logo {
@@ -349,6 +352,14 @@ nav .menu .menu_icon:hover .icon:after {
 	}
 }
 
+.logo-D{
+	height: 40%;
+}
+
+.dev-button:hover .logo-D{
+	fill: white;
+}
+
 .wrapper .container .p404 .content {
 	top: 50%;
 	left: 50%;
@@ -389,12 +400,12 @@ nav .menu .menu_icon:hover .icon:after {
 		transform: translateY(40px);
 	}
 }
-@media screen and (max-width: 799px) {
+/* @media screen and (max-width: 799px) {
 	.wrapper .container .text {
 		min-height: 400px;
 		height: 80%;
 	}
-}
+} */
 .wrapper .container .text article {
 	/* width: 400px; */
 	z-index: 4;
@@ -419,9 +430,9 @@ nav .menu .menu_icon:hover .icon:after {
 	text-shadow: 6px 6px 10px #32243e;
 }
 
-.seekho-logo {
-	width: 15vw;
-	margin-bottom: 3rem;
+.mlh-logo {
+	width: 20vw;
+	/* margin-bottom: 3rem; */
 }
 
 .wrapper .container .text article button {
@@ -435,8 +446,19 @@ nav .menu .menu_icon:hover .icon:after {
 	background-color: white;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	transition: all 0.3s ease;
+}
+
+.dev-button{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.dev-D{
+	height: 40%;
 }
 
 .social {
@@ -737,15 +759,19 @@ canvas {
 
 	.wrapper .container {
 		gap: 0;
+		justify-content: start;
+		height: auto;
+		padding-top: 0;
+		margin-bottom: 3rem;
 	}
 
-	.seekho-logo {
-		height: 5vh;
+	.mlh-logo {
+		height: 10vh;
 		width: auto;
 	}
 
 	.version-logo {
-		margin-top: 250px;
+		margin-top: 150px;
 		overflow-y: hidden;
 		margin-inline: auto;
 		width: 100%;
@@ -755,13 +781,13 @@ canvas {
 
 @media (max-width: 500px) {
 	.version-logo {
-		margin-top: 9rem;
+		margin-top: 7rem;
 		height: 14vh;
 		width: auto;
 	}
 
-	.seekho-logo {
-		height: 5vh;
+	.mlh-logo {
+		height: 10vh;
 		margin-top: 1rem;
 		margin-bottom: 1rem;
 	}
