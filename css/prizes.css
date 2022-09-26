@@ -20,7 +20,7 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	/* height: 100vh; */
+	height: 100vh;
 	padding-top: 5rem;
 }
 .prizes {
@@ -225,6 +225,9 @@
 	#btn--3 {
 		width: 96%;
 		padding: 10px;
+	}
+	#prize{
+		height: max-content;
 	}
 }
 @media (max-width: 566px) {
