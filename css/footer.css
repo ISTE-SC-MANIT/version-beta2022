@@ -59,6 +59,13 @@ span i:hover {
 	); */
 }
 
+
+.footerLeft{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: space-between;
+}
 .footerLeft .logo--iste--footer img {
 	width: 220px;
 	margin-left: 40px;
@@ -304,4 +311,27 @@ span i:hover {
 	.social-icon {
 		left: 50%;
 	}
+}
+
+footer{
+	background-color:  rgba(5, 20, 44, 0.669);
+	border-radius: 10px;
+}
+
+
+.footer-button{
+	margin: 1rem;
+	padding: 1rem;
+	background: #FCA311;
+	color: rgb(255, 250, 250);
+	/* border: 1px solid white; */
+	/* border-color: yellow; */
+	border-radius: 15px;
+	font-size: 1em;
+	cursor: pointer;
+	width:70%;
+}
+
+.footer-button:hover{
+	font-size: 1.2em;
 }
