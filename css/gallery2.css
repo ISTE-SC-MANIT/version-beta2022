@@ -24,13 +24,15 @@
     display              : grid;
     grid-auto-rows       : minmax(200px, auto);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap             : 5px;
+    grid-gap             : 16px;
 }
 
 .image-grid {
     background-size    : cover;
     background-repeat  : no-repeat;
     background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
 }
 
 .img1 {
@@ -76,6 +78,11 @@
     background-image: url(../images/gallery-images/img8.jpeg);
     grid-column     : 4/7;
 }
+
+.image-grid:hover {
+    transform: scale(1.03);
+    opacity: 1;
+  }
 
 @media screen and (max-width: 900px) {
     .gallery-grid {
