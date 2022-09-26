@@ -13,7 +13,7 @@ setTimeout(function loadcomplete() {
 	mlhLogo.style.display = 'none';
 	mlhLogo.style.opacity = 0;
 	imgMlh.style.display = 'none';
-}, 5000);
+}, 8000);
 
 const nav = document.querySelector('#navbar');
 window.onscroll = () => {
