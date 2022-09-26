@@ -10,7 +10,10 @@
 } */
 #head h1 {
 	color: #fca311;
-	font-size: 4rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 9px;
+
 }
 #prize {
 	display: flex;
@@ -18,7 +21,7 @@
 	flex-direction: column;
 	align-items: center;
 	/* height: 100vh; */
-	/* padding: 10rem; */
+	padding-top: 5rem;
 }
 .prizes {
 	display: flex;

@@ -3,7 +3,7 @@
 }
 #sponsors--section {
 	/* background-color: white; */
-	margin-top: 6rem;
+	padding-top: 5rem;
 }
 .sponsors {
 	position: relative;
@@ -19,14 +19,14 @@
 	padding-left: 7rem;
 }
 .heading--sponsor {
-	font-size: 4rem;
-	margin-top: 2rem;
+	font-size: 3.5rem;
+	/* margin-top: 2rem; */
 	color: #fca311;
 	position: relative;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 600;
-	letter-spacing: 2px;
+	letter-spacing: 9px;
 }
 .sponsors--i img {
 	width: 60%;

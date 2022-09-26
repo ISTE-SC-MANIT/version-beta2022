@@ -1,17 +1,22 @@
 .gallery {
     width: 100%;
     position: relative;
+    padding-top: 5rem;
 }
 
 .gallery h1{
     text-align: center;
     margin: 20px;
+    margin-top: 0;
+    margin-bottom: 2rem;
     font-size: 3.5rem;
     color:#fca311;
     font-weight: bold;
     letter-spacing: 9px;
     font-weight: 600;
 }
+
+
 
 .gallery-grid {
     width                : 80%;
@@ -130,8 +135,8 @@
     }
     .gallery h1{
         font-size: 2.5rem;
-        font-weight: bold;
-        letter-spacing: 3px;
+        font-weight: 600;
+        letter-spacing: 9px;
         margin-bottom: 3rem;
     }
     .img1{

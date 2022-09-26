@@ -11,7 +11,7 @@
     width: 100%;
     z-index: 1000;
     position: fixed;
-    overflow-y: hidden;
+    overflow: hidden;
 
 }
 

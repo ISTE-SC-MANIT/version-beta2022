@@ -2,6 +2,11 @@
 	position: relative;
 	transform-style: preserve-3d;
 	animation: hovering 1s infinite alternate-reverse ease-in-out;
+	width: 90%;
+}
+
+.box-preloader{
+	width: unset;
 }
 
 .logo {
