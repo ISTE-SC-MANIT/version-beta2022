@@ -330,6 +330,7 @@ footer{
 	font-size: 1em;
 	cursor: pointer;
 	width:70%;
+	text-align: center;
 }
 
 .footer-button:hover{
