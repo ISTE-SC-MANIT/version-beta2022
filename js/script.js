@@ -4,10 +4,15 @@
 
 const load = document.getElementById('preloader');
 const body = document.getElementById('body');
+const mlhLogo = document.getElementById('mlh-trust-badge');
+const imgMlh = document.getElementById('img--mlh');
 
 setTimeout(function loadcomplete() {
 	load.style.display = 'none';
 	body.style.overflow = 'unset';
+	mlhLogo.style.display = 'none';
+	mlhLogo.style.opacity = 0;
+	imgMlh.style.display = 'none';
 }, 5000);
 
 const nav = document.querySelector('#navbar');
