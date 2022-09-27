@@ -16,7 +16,7 @@ setTimeout(function loadcomplete() {
 	mlhLogo.style.display = 'none';
 	mlhLogo.style.opacity = 0;
 	imgMlh.style.display = 'none';
-}, 8000);
+}, 5000);
 
 const nav = document.querySelector('#navbar');
 window.onscroll = () => {
