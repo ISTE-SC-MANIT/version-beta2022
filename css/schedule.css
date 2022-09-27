@@ -17,7 +17,7 @@
 	margin: auto;
 }
 
-.schedule-content-div{
+.schedule-content-div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -120,11 +120,6 @@ li {
 .schedule__content__swiper p {
 	opacity: 0.8;
 }
-.appear-anim {
-	color: white;
-	animation: appear;
-	animation-duration: 2.5s;
-}
 
 @keyframes appear {
 	from {
@@ -158,7 +153,10 @@ li {
 	border: 1px solid grey;
 	border-radius: 12px;
 	padding: 1rem;
+	animation-direction: alternate;
+	transition: 0.4s;
 }
+
 .time-content {
 	display: none;
 }
