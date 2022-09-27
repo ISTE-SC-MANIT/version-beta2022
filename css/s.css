@@ -297,7 +297,7 @@ nav .menu .menu_icon:hover .icon:after {
 .wrapper .container {
 	margin: 0 2vw;
 	transition: all 0.4s ease;
-	gap: 3rem;
+	gap: 1rem;
 	display: flex;
 	flex-direction: column;
 	position: relative;

@@ -63,10 +63,10 @@
 	position: relative;
 	transition: all 1s 0.2s ease;
 }
-.timer__item:hover {
+/* .timer__item:hover {
 	transition: all 0.3s ease;
 	transform: translateY(-20px);
-}
+} */
 @media screen and (max-width: 799px) {
 	.timer__item:hover {
 		transform: translateY(0px);
@@ -94,7 +94,7 @@
 		transform: translateY(40px);
 	}
 }
-.timer__item:before {
+/* .timer__item:before {
 	width: calc(100% - 20px);
 	height: 90px;
 	content: '';
@@ -104,7 +104,7 @@
 	z-index: -1;
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.2);
-}
+} */
 @media screen and (max-width: 799px) {
 	.timer__item:before {
 		height: 80px;
