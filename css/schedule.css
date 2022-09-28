@@ -71,6 +71,7 @@ li {
 	position: absolute;
 	/* left: 50%; */
 	width: 100%;
+	z-index: 4;
 	/* top: 81%; */
 	bottom: 21%;
 	height: 3px;
@@ -89,10 +90,11 @@ li {
 	left: calc(50% - 12.5px);
 	width: 25px;
 	bottom: 2%;
+	z-index: 5;
 	height: 25px;
-	background: #109ca5;
+	background: #fca311;
 	border-radius: 50%;
-	box-shadow: 0 0 0 3px rgb(33 233 200 / 20%);
+	box-shadow: 0 0 0 3px #e9ce2133;
 }
 
 .content {
@@ -141,7 +143,17 @@ li {
 	animation: fontChange;
 	animation-duration: 0.5s;
 }
-
+.link-border:nth-child(1):after{
+	content: '' !important;
+	position: absolute !important;
+	left: calc(50% - 12.5px) !important;
+	width: 25px !important;
+	bottom: 2% !important;
+	height: 25px !important;
+	background: #109ca5 !important;
+	border-radius: 50% !important;
+	box-shadow: 0 0 0 3px rgb(33 233 200 / 20%) !important;
+}
 @keyframes fontChange {
 	from {
 		font-size: 1.2em;
