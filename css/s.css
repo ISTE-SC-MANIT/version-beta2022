@@ -196,6 +196,8 @@ nav .menu .menu_links .link {
 	position: relative;
 	transition: all 0.3s 0.2s ease;
 }
+
+
 nav .menu .menu_links .link:last-child {
 	margin-right: 0;
 }
@@ -217,6 +219,20 @@ nav .menu .menu_links .link:hover {
 nav .menu .menu_links .link:hover:before {
 	width: 80%;
 	left: 0;
+}
+.link-active{
+	color: #fb8a8a !important;
+}
+.link-active:before {
+	content: '' !important;
+	position: absolute !important;
+	width: 100% !important;
+	height: 4px !important;
+	background: linear-gradient(90deg, #ffedc0 0%, #ff9d87 100%) !important;
+	bottom: -10px !important;
+	border-radius: 4px !important;
+	transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26) !important;
+	left: 0 !important;
 }
 nav .menu .menu_icon {
 	width: 40px;

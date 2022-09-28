@@ -43,3 +43,28 @@ navLinks.forEach((navlink) => {
 		}
 	});
 });
+
+
+// Active Links JS
+const sections = document.querySelectorAll("section[id]");
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  
+  let scrollY = window.pageYOffset;
+
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 50;
+    var sectionId = current.getAttribute("id");
+
+    if (
+      scrollY > sectionTop &&
+      scrollY <= sectionTop + sectionHeight
+    ){
+      document.querySelector(".menu_links a[href*=" + sectionId + "]").classList.add("link-active");
+    } else {
+      document.querySelector(".menu_links a[href*=" + sectionId + "]").classList.remove("link-active");
+    }
+  });
+}
