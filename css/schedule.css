@@ -205,6 +205,22 @@ h4 {
 	margin-bottom: 1rem;
 	padding: 0;
 }
+.swiper-pagination{
+	position: unset !important;
+}
+
+.swiper-pagination-bullet {
+	background-color: #ffffff !important;
+	opacity: 0.8 !important;
+	height: 10px !important;
+	width: 10px !important;
+	/* margin: 16px 16px; */
+	/* padding: 6px 6px; */
+}
+.swiper-pagination-bullet-active {
+	background-color: #fca311 !important;
+	
+  }
 @media (min-width: 822px) {
 	.arrow {
 		display: none;

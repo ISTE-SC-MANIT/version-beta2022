@@ -9,6 +9,10 @@ const swiper = new Swiper('.swiper', {
       delay: 3500,
       disableOnInteraction: false,
   },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
   // centeredSlides: true,
   slidesPerView: 'auto',
   
