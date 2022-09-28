@@ -248,3 +248,23 @@ h3{
 	background-color: #fca311;
 	height: 1px;
 }
+@media (max-width: 822px){
+	.line{
+		width: 90%;
+	}
+}
+.copyright{
+	margin: 1rem;
+	text-align: center;
+}
+
+.tandc{
+	margin:1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+	text-align: center;
+	color: #fca311;
+}	
