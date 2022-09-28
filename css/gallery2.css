@@ -91,7 +91,7 @@
     }
 
     .img1 {
-        background-image: url(../images/gallery-images/img1.jpeg);
+        background-image: url(../images/gallery-images/img1.jpg);
         grid-column     : 1/7;
         grid-row        : 1/3;
     }
