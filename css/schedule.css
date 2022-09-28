@@ -154,6 +154,8 @@ li {
 	border: 1px solid grey;
 	border-radius: 12px;
 	padding: 1rem;
+	animation: appear;
+	animation-duration: 2s;
 	animation-direction: alternate;
 	transition: 0.4s;
 }
