@@ -248,11 +248,7 @@ h3{
 	background-color: #fca311;
 	height: 1px;
 }
-@media (max-width: 822px){
-	.line{
-		width: 90%;
-	}
-}
+
 .copyright{
 	margin: 1rem;
 	text-align: center;
@@ -264,7 +260,16 @@ h3{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 50%;
+	width: 70%;
 	text-align: center;
 	color: #fca311;
 }	
+
+@media (max-width: 822px) {
+	.line {
+		width: 90%;
+	}
+	.tandc{
+		width: 100%;
+	}
+}
