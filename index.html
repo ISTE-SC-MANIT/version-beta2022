@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/beta.css">
 	<link rel="stylesheet" href="css/preloader.css">
+	<link rel="stylesheet" href="css/animation.css">
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
 	<link
 		href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Edu+VIC+WA+NT+Beginner&family=Indie+Flower&family=Montserrat:ital,wght@0,500;1,400&family=Patrick+Hand&family=Rubik+Burned&display=swap"
@@ -42,7 +43,7 @@
 </head>
 
 <body onload="loadcomplete()" id="body--nav">
-	<div id="preloader">
+	<!-- <div id="preloader">
 		<div class="box box-preloader">
 			<a class="logo"></a>
 			<div class="ring ring1">
@@ -55,7 +56,7 @@
 				<div class="particle"></div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- <div id="particles-js"></div> -->
 	<div id="particles-js">
@@ -155,9 +156,9 @@
 			<!-- <p class="timer__text">Version Beta 5.0 Coming soon ...</p> -->
 		</div>
 	</section>
-	<div class="about-container" id="about">
-		<h1 class="about-heading">ABOUT</h1>
-		<div class="about-content">
+	<div class="about-container hidden" id="about">
+		<h1 class="about-heading hidden">ABOUT</h1>
+		<div class="about-content hidden">
 			<div class="about-left"></div>
 			<div class="about-right">
 				<p>
@@ -214,7 +215,7 @@
 				</div>
 			</div>
 		</div> -->
-	<div class="container-schedule" id="schedule">
+	<div class="container-schedule hidden" id="schedule">
 		<h2 class="schedule-heading center">SCHEDULE</h2>
 
 		<div class="schedule-content-div">
@@ -353,7 +354,7 @@
 			</div>
 		</div>
 	</div>
-	<section id="prize">
+	<section id="prize" class="hidden">
 		<div id="head">
 			<h1 id="head--prize">PRIZES</h1>
 		</div>
@@ -374,7 +375,7 @@
 		</div>
 	</section>
 
-	<section class="gallery" id="gallery">
+	<section class="gallery hidden" id="gallery">
 		<h1>GALLERY</h1>
 		<div class="gallery-grid">
 			<div class="image-grid img1"></div>
@@ -388,7 +389,7 @@
 		</div>
 	</section>
 
-	<section id="sponsors--section">
+	<section id="sponsors--section" class="hidden">
 		<div class="heading--sponsor">Sponsors</div>
 		<div class="sponsors">
 			<a class="sponsors--i" href="https://devfolio.co/home/" target="_blank">
@@ -646,7 +647,7 @@
 		</div>
 	</div>
 
-	<footer class="footer-container-main">
+	<footer class="footer-container-main hidden">
 		<div class="footer-container">
 			<div class="footer-left">
 				<!-- <a href="https://versionbeta.istemanit.in/doc/VB%20Brochure%202021.pdf"
@@ -740,6 +741,7 @@
 	<script src="js/timer.js"></script>
 	<script src="js/nav.js"></script>
 	<script src="https://kit.fontawesome.com/3a4f34ed87.js" crossorigin="anonymous"></script>
+	<script src="js/animations.js"></script>
 </body>
 
 </html>
