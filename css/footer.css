@@ -229,6 +229,9 @@
 		padding: 0 10px;
 
 	}
+	.footer-block .center-text{
+		margin-inline: 0 ;
+	}
 }
 
 .footer-logo{
