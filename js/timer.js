@@ -4,11 +4,11 @@ window.addEventListener('load', (event) => {
 		hour = minute * 60,
 		day = hour * 24;
 
-	var today = new Date("November 4, 2022");
+	var today = new Date("Oct 21, 2022");
 	var newdate = new Date();
 
 	setTimeout(() => {
-		let countDown = new Date(newdate.setDate(today.getDate() + 60)).getTime(),
+		let countDown = new Date(newdate.setDate(today.getDate()+30)).getTime(),
 			x = setInterval(function () {
 				let now = new Date().getTime(),
 					distance = countDown-now;
