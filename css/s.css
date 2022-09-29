@@ -4,6 +4,7 @@ h3,
 h4,
 h5,
 h6,
+p,
 ul,
 li,
 button,
@@ -261,9 +262,6 @@ nav .menu .menu_icon {
 		display: flex;
 		opacity: 1;
 	}
-	#about__content-- {
-		font-size: 20px;
-	}
 }
 nav .menu .menu_icon .icon {
 	width: 24px;
@@ -516,14 +514,6 @@ nav .menu .menu_icon:hover .icon:after {
 		font-size: 50px;
 		width: fit-content;
 	}
-	#about__content-- {
-		font-size: 18px;
-	}
-}
-@media screen and (max-width: 500px) {
-	#about__content-- {
-		font-size: 15px;
-	}
 }
 @keyframes anime404 {
 	0% {
@@ -627,7 +617,6 @@ canvas {
 	display: flex;
 	justify-content: space-around;
 	opacity: 0.8;
-	font-size: 1.1rem;
 }
 
 .about-left {
@@ -843,7 +832,7 @@ canvas {
 
 @media (max-width: 500px) {
 	.version-logo {
-		margin-top: 11rem;
+		margin-top: 7rem;
 		height: 14vh;
 		width: auto;
 	}
