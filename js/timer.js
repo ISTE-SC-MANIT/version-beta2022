@@ -7,26 +7,44 @@ window.addEventListener('load', (event) => {
 	var today = new Date("Oct 21, 2022");
 	var newdate = new Date();
 
-	setTimeout(() => {
-		let countDown = new Date(newdate.setDate(today.getDate()+30)).getTime(),
-			x = setInterval(function () {
-				let now = new Date().getTime(),
-					distance = countDown-now;
+	// setTimeout(() => {
+	// 	let countDown = new Date(newdate.setDate(today.getDate()+30)).getTime(),
+	// 		x = setInterval(function () {
+	// 			let now = new Date().getTime(),
+	// 				distance = countDown-now;
 
-				(document.getElementById('days').innerText = Math.floor(
-					distance / day
-				)),
-					(document.getElementById('hours').innerText = Math.floor(
-						(distance % day) / hour
-					)),
-					(document.getElementById('minutes').innerText = Math.floor(
-						(distance % hour) / minute
-					)),
-					(document.getElementById('seconds').innerText = Math.floor(
-						(distance % minute) / second
-					));
-			}, second);
-	}, 500);
+	// 			(document.getElementById('days').innerText = Math.floor(
+	// 				distance / day
+	// 			)),
+	// 				(document.getElementById('hours').innerText = Math.floor(
+	// 					(distance % day) / hour
+	// 				)),
+	// 				(document.getElementById('minutes').innerText = Math.floor(
+	// 					(distance % hour) / minute
+	// 				)),
+	// 				(document.getElementById('seconds').innerText = Math.floor(
+	// 					(distance % minute) / second
+	// 				));
+	// 		}, second);
+	// }, 500);
+	let countDown=new Date("Oct 21, 2022");
+	setInterval(function () {
+		let now = new Date().getTime(),
+			distance = countDown - now;
+
+		(document.getElementById('days').innerText = Math.floor(
+			distance / day
+		)),
+			(document.getElementById('hours').innerText = Math.floor(
+				(distance % day) / hour
+			)),
+			(document.getElementById('minutes').innerText = Math.floor(
+				(distance % hour) / minute
+			)),
+			(document.getElementById('seconds').innerText = Math.floor(
+				(distance % minute) / second
+			));
+	}, second);
 
 	if (window.innerWidth < 799) {
 		document.querySelector('.wrapper-timer').style.height = window.innerHeight + 'px';
