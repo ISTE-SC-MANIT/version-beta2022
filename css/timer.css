@@ -53,6 +53,12 @@
 	width: 95%;
 	margin-top: 2rem;
 }
+
+@media(max-width: 800px){
+	.timer__content{
+		margin-top: 0rem;
+	}
+}
 .timer__item {
 	display: flex;
 	flex-direction: column;
