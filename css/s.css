@@ -408,7 +408,7 @@ nav .menu .menu_icon:hover .icon:after {
 	}
 }
 .wrapper .container .text {
-	margin: 40px 0;
+	margin: 20px 0;
 	margin-bottom: 0;
 	animation: text 0.6s 1.8s ease backwards;
 }
