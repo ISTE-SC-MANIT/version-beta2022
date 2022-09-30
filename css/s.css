@@ -331,7 +331,7 @@ nav .menu .menu_icon:hover .icon:after {
 
 .hackimg {
 	z-index: 3;
-	animation: text 0.6s 1.8s ease backwards;
+	animation: text 0.6s 5.4s ease backwards;
 	display: flex;
 	height: 100%;
 	align-items: center;
@@ -410,7 +410,7 @@ nav .menu .menu_icon:hover .icon:after {
 .wrapper .container .text {
 	margin: 20px 0;
 	margin-bottom: 0;
-	animation: text 0.6s 1.8s ease backwards;
+	animation: text 0.6s 5.4s ease backwards;
 }
 @keyframes text {
 	0% {
@@ -506,7 +506,7 @@ nav .menu .menu_icon:hover .icon:after {
 	display: flex !important;
 	z-index: 2;
 	animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
-	animation-delay: 1.2s;
+	animation-delay: 5.4s;
 }
 @media screen and (max-width: 799px) {
 	.wrapper .container .p404 {
