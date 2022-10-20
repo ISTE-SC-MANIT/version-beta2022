@@ -7,7 +7,7 @@ window.addEventListener('load', (event) => {
 	var today = new Date("Oct 21, 2022");
 	var newdate = new Date();
 	
-	let countDown=new Date("Oct 21, 2022");
+	let countDown=new Date("Nov 25, 2022");
 	setInterval(function () {
 		let now = new Date().getTime(),
 			distance = countDown - now;
