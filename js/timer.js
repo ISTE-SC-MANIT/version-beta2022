@@ -11,7 +11,7 @@ window.addEventListener('load', (event) => {
 	setInterval(function () {
 		let now = new Date().getTime(),
 			distance = countDown - now;
-
+		if(distance<0)distance=0;
 		(document.getElementById('days').innerText = Math.floor(
 			distance / day
 		)),
