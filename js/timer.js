@@ -4,17 +4,19 @@ window.addEventListener('load', (event) => {
 		hour = minute * 60,
 		day = hour * 24;
 
-	var today = new Date("Oct 21, 2022");
+	var today = new Date('Oct 21, 2022');
 	var newdate = new Date();
-	
-	let countDown=new Date("Nov 20, 2022");
+
+	let countDown = new Date('Nov 22, 2022');
+	// const timerCon=document.querySelector()
 	setInterval(function () {
 		let now = new Date().getTime(),
 			distance = countDown - now;
-		if(distance<0)distance=0;
-		(document.getElementById('days').innerText = Math.floor(
-			distance / day
-		)),
+		if (distance < 0) {
+			distance = 0;
+		}
+
+		(document.getElementById('days').innerText = Math.floor(distance / day)),
 			(document.getElementById('hours').innerText = Math.floor(
 				(distance % day) / hour
 			)),
@@ -24,9 +26,11 @@ window.addEventListener('load', (event) => {
 			(document.getElementById('seconds').innerText = Math.floor(
 				(distance % minute) / second
 			));
+		// if(distance)
 	}, second);
 
 	if (window.innerWidth < 799) {
-		document.querySelector('.wrapper-timer').style.height = window.innerHeight + 'px';
+		document.querySelector('.wrapper-timer').style.height =
+			window.innerHeight + 'px';
 	}
 });
