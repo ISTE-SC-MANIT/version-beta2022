@@ -27,9 +27,9 @@ window.addEventListener('load', (event) => {
 				(distance % minute) / second
 			));
 
-			if(distance=0){
+			if(distance===0){
 				document.getElementById('timerContainer').classList.add('hideThis');
-				document.getElementById('regStatus').innerText="Registrations Closed ..."
+				document.getElementById('regStatus').innerText="Registrations Closed"
 			}
 			
 	}, second);
