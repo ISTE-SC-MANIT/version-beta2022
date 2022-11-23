@@ -15,7 +15,7 @@ window.addEventListener('load', (event) => {
 		if (distance < 0) {
 			distance = 0;
 		}
-
+		
 		(document.getElementById('days').innerText = Math.floor(distance / day)),
 			(document.getElementById('hours').innerText = Math.floor(
 				(distance % day) / hour
@@ -26,7 +26,12 @@ window.addEventListener('load', (event) => {
 			(document.getElementById('seconds').innerText = Math.floor(
 				(distance % minute) / second
 			));
-		// if(distance)
+
+			if(distance=0){
+				document.getElementById('timerContainer').classList.add('hideThis');
+				document.getElementById('regStatus').innerText="Registrations Closed ..."
+			}
+			
 	}, second);
 
 	if (window.innerWidth < 799) {

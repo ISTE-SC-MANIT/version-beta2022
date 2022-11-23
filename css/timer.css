@@ -197,6 +197,11 @@
 #sponsor-logo img {
 	width: 100%;
 }
+
+.hideThis{
+	display: none;
+}
+
 /* .footer {
 	height: 60px;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -240,3 +245,5 @@
 		padding: 20px 40px;
 	} */
 /* } */
+
+
