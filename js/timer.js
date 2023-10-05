@@ -7,7 +7,7 @@ window.addEventListener('load', (event) => {
 	var today = new Date('Oct 02, 2023');
 	var newdate = new Date();
 
-	let countDown = new Date('Oct 31, 2023');
+	let countDown = new Date('Oct 25, 2023');
 	// const timerCon=document.querySelector()
 	setInterval(function () {
 		let now = new Date().getTime(),
